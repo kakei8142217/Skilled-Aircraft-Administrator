@@ -40,6 +40,8 @@ Partial Class SAAS
         Me.Button4 = New System.Windows.Forms.Button()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ListBox1
@@ -135,7 +137,7 @@ Partial Class SAAS
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("宋体", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label3.Location = New System.Drawing.Point(537, 145)
+        Me.Label3.Location = New System.Drawing.Point(525, 12)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(245, 29)
         Me.Label3.TabIndex = 10
@@ -144,25 +146,26 @@ Partial Class SAAS
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(589, 197)
+        Me.Label4.Location = New System.Drawing.Point(500, 88)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(131, 12)
+        Me.Label4.Size = New System.Drawing.Size(293, 72)
         Me.Label4.TabIndex = 11
-        Me.Label4.Text = "程序设计与开发：Kakei"
+        Me.Label4.Text = "各位提督早上/中午/晚上/半夜好" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "欢迎使用熟练舰载机管理员" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "我是本工具的程序设计与开发，Kakei" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "由于我的能力有限，无法避免出现Bug" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "以及三次元种种琐" &
+    "事，可能无法及时应对游戏上的更新" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "请容我为Bug或更新延迟带来使用上的不便致以歉意" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(607, 240)
+        Me.Label5.Location = New System.Drawing.Point(500, 62)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(95, 12)
         Me.Label5.TabIndex = 12
-        Me.Label5.Text = "程序版本：0.2.1"
+        Me.Label5.Text = "程序版本：0.2.2"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(607, 273)
+        Me.Label6.Location = New System.Drawing.Point(697, 62)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(95, 12)
         Me.Label6.TabIndex = 13
@@ -191,11 +194,22 @@ Partial Class SAAS
         Me.CheckBox1.Text = "只导入锁定的装备"
         Me.CheckBox1.UseVisualStyleBackColor = True
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(500, 185)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(292, 298)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 16
+        Me.PictureBox1.TabStop = False
+        '
         'SAAS
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(838, 543)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.CheckBox1)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Label6)
@@ -216,6 +230,7 @@ Partial Class SAAS
         Me.MaximizeBox = False
         Me.Name = "SAAS"
         Me.Text = "熟练舰载机管理员-设置"
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -238,4 +253,5 @@ Partial Class SAAS
     Friend WithEvents Button4 As Button
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
     Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents PictureBox1 As PictureBox
 End Class
