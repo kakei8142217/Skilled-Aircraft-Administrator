@@ -457,7 +457,7 @@ Public Class plane_class
     Public Function getnfequipnum(ByVal x As Integer) As Integer
         getnfequipnum = 0
         If x = 0 Then
-            For a = 1 To planelist.Count
+            For a = 1 To planelist.Count - 1
                 If planelist(a).classification = 8 Then
                     getnfequipnum = getnfequipnum + 1
                 End If
