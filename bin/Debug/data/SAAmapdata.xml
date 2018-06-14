@@ -511,7 +511,7 @@
        <aavalue state="advantage">158</aavalue>
        <aavalue state="ensured">315</aavalue>
     </battle>
-    <battle name="J" max="0" boss="0">
+    <battle name="J" max="1" boss="0">
        <aavalue state="advantage">198</aavalue>
        <aavalue state="ensured">396</aavalue>
     </battle>

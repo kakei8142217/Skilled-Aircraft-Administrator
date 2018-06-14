@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="gb2312"?>
-<baseplanedata version="20180418141213">
+<baseplanedata version="20180614110045">
   <plane name="九六式舰战" id="19" classification="1" fire="0" torpedo="0" antiaircraft="2" antisubmarine="0" bombing="0" hit="0" armor="0" avoid="0" spotting="0" airrange="3" antibombing="0" intercept="0" nightfighting="0" />
   <plane name="Fulmar" id="249" classification="1" fire="1" torpedo="0" antiaircraft="3" antisubmarine="2" bombing="0" hit="2" armor="0" avoid="1" spotting="1" airrange="4" antibombing="0" intercept="0" nightfighting="0" />
   <plane name="F4F-3" id="197" classification="1" fire="1" torpedo="0" antiaircraft="4" antisubmarine="0" bombing="0" hit="0" armor="0" avoid="2" spotting="0" airrange="4" antibombing="0" intercept="0" nightfighting="0" />
-  <plane name="九六式舰战改" id="288" classification="1" fire="0" torpedo="0" antiaircraft="4" antisubmarine="0" bombing="0" hit="0" armor="0" avoid="1" spotting="0" airrange="4" antibombing="0" intercept="0" nightfighting="0" />
+  <plane name="九六式舰战改" id="228" classification="1" fire="0" torpedo="0" antiaircraft="4" antisubmarine="0" bombing="0" hit="0" armor="0" avoid="1" spotting="0" airrange="4" antibombing="0" intercept="0" nightfighting="0" />
   <plane name="零战32型" id="181" classification="1" fire="0" torpedo="0" antiaircraft="5" antisubmarine="0" bombing="0" hit="0" armor="0" avoid="2" spotting="0" airrange="5" antibombing="0" intercept="0" nightfighting="0" />
   <plane name="零战21型" id="20" classification="1" fire="0" torpedo="0" antiaircraft="5" antisubmarine="0" bombing="0" hit="0" armor="0" avoid="0" spotting="0" airrange="7" antibombing="0" intercept="0" nightfighting="0" />
   <plane name="F4F-4" id="198" classification="1" fire="1" torpedo="0" antiaircraft="5" antisubmarine="0" bombing="0" hit="1" armor="0" avoid="2" spotting="1" airrange="4" antibombing="0" intercept="0" nightfighting="0" />
@@ -47,6 +47,8 @@
   <plane name="彗星601空" id="111" classification="3" fire="0" torpedo="0" antiaircraft="0" antisubmarine="4" bombing="11" hit="1" armor="0" avoid="0" spotting="1" airrange="5" antibombing="0" intercept="0" nightfighting="0" />
   <plane name="试制南山" id="148" classification="3" fire="0" torpedo="0" antiaircraft="1" antisubmarine="4" bombing="11" hit="0" armor="0" avoid="0" spotting="2" airrange="5" antibombing="0" intercept="0" nightfighting="0" />
   <plane name="彗星江草队" id="100" classification="3" fire="0" torpedo="0" antiaircraft="1" antisubmarine="5" bombing="13" hit="4" armor="0" avoid="0" spotting="4" airrange="5" antibombing="0" intercept="0" nightfighting="0" />
+  <plane name="彗星22型634空" id="291" classification="3" fire="0" torpedo="0" antiaircraft="1" antisubmarine="4" bombing="11" hit="2" armor="0" avoid="0" spotting="0" airrange="5" antibombing="0" intercept="0" nightfighting="0" />
+  <plane name="彗星22型634空熟练" id="292" classification="3" fire="0" torpedo="0" antiaircraft="2" antisubmarine="5" bombing="12" hit="3" armor="0" avoid="0" spotting="2" airrange="6" antibombing="0" intercept="0" nightfighting="0" />
   <plane name="剑鱼" id="242" classification="4" fire="2" torpedo="3" antiaircraft="0" antisubmarine="4" bombing="0" hit="1" armor="0" avoid="0" spotting="1" airrange="3" antibombing="0" intercept="0" nightfighting="2" />
   <plane name="Re.2001 G改" id="188" classification="4" fire="3" torpedo="4" antiaircraft="4" antisubmarine="0" bombing="0" hit="0" armor="0" avoid="2" spotting="0" airrange="3" antibombing="0" intercept="0" nightfighting="0" />
   <plane name="九七式舰攻" id="16" classification="4" fire="0" torpedo="5" antiaircraft="0" antisubmarine="4" bombing="0" hit="0" armor="0" avoid="0" spotting="1" airrange="4" antibombing="0" intercept="0" nightfighting="0" />

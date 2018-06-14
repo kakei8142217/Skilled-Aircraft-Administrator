@@ -358,7 +358,7 @@
 
                 If restrictcontrol.getrestrictattribute(a, 3) > 0 Then     '装载舰载机容器
                     For b = 1 To restrictcontrol.getrestrictattribute(a, 3)
-                        cplanegroup.setcarry(ship(a).getcarry(-1))
+                        cplanegroup.setcarry(ship(a).getcarry(10))
                     Next
                 End If
             End If
@@ -1178,7 +1178,7 @@
                 For a = 0 To cplanegroup.carrycount - 1
                     vessel = cplanegroup.getcarry(a)
                     If vessel.planeid = 0 Then
-                        getplaneid = plane.getplane(4)
+                        getplaneid = plane.getplane(vessel.enabletype({4, 3}))
                         If getplaneid = 0 Then
                             getplaneid = plane.getplane(3)
                             UIcontrol.adderror(4)
@@ -1541,7 +1541,7 @@
                             vessel = cplanegroup.getcarry(a)
                             If plane.getattribute(vessel.planeid, 3) = 1 Then
                                 If Not (restrictcontrol.nfstate(vessel) >= 1 And plane.getattribute(vessel.planeid, 16) <> 0) Then
-                                    getplaneid = plane.getplane(4)
+                                    getplaneid = plane.getplane(vessel.enabletype({4, 3}))
                                     If getplaneid = 0 Then
                                         getplaneid = plane.getplane(3)
                                     End If

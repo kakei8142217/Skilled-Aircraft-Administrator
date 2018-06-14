@@ -988,6 +988,54 @@ Public Class carry_class
         End Get
     End Property
 
+    Public Function enabletype(ByVal x() As Integer, Optional ByVal y As Integer = 0) As Integer
+        enabletype = 0
+        Dim shipuniquecode As String = Mid(uniquecodevalue, 1, Len(uniquecodevalue) - 1)
+        For a = 0 To x.Length - 1
+            If x(a) = 1 Then
+                If baseship.getattribute(shipuniquecode, 14) = 1 Then
+                    enabletype = x(a)
+                    Exit For
+                End If
+            ElseIf x(a) = 2 Then
+                If baseship.getattribute(shipuniquecode, 16) = 1 Then
+                    enabletype = x(a)
+                    Exit For
+                End If
+            ElseIf x(a) = 3 Then
+                If baseship.getattribute(shipuniquecode, 16) = 1 Then
+                    enabletype = x(a)
+                    Exit For
+                End If
+            ElseIf x(a) = 4 Then
+                If baseship.getattribute(shipuniquecode, 15) = 1 Then
+                    enabletype = x(a)
+                    Exit For
+                End If
+            ElseIf x(a) = 5 Then
+                If baseship.getattribute(shipuniquecode, 18) = 1 Then
+                    enabletype = x(a)
+                    Exit For
+                End If
+            ElseIf x(a) = 6 Then
+                If baseship.getattribute(shipuniquecode, 17) = 1 Then
+                    enabletype = x(a)
+                    Exit For
+                End If
+            ElseIf x(a) = 11 Then
+                If baseship.getattribute(shipuniquecode, 19) = 1 Then
+                    enabletype = x(a)
+                    Exit For
+                End If
+            ElseIf x(a) = 12 Then
+                If baseship.getattribute(shipuniquecode, 20) = 1 Then
+                    enabletype = x(a)
+                    Exit For
+                End If
+            End If
+        Next
+    End Function
+
     Public Sub clear()
         amountvalue = 0
         shipidvalue = -1
@@ -2018,6 +2066,7 @@ Public Class filecontrol_class
         If updrootnode.Attributes("version").Value <> bpdrootnode.Attributes("version").Value Then
             updrootnode.SetAttribute("version", bpdrootnode.Attributes("version").Value)
             Dim antiaircraft As Double
+            Dim resetcount = saaupd.DocumentElement.ChildNodes.Count
             For Each upnode As Xml.XmlElement In saaupd.DocumentElement.ChildNodes
                 If bpcolle.Contains(upnode.Attributes("id").Value) Then
                     bplane = bpcolle.Item(upnode.Attributes("id").Value)
@@ -2042,8 +2091,29 @@ Public Class filecontrol_class
                     upnode.SetAttribute("antibombing", bplane.antibombing)
                     upnode.SetAttribute("intercept", bplane.intercept)
                     upnode.SetAttribute("nightfighting", bplane.nightfighting)
+
+                    resetcount = resetcount - 1
                 End If
             Next
+
+            If resetcount <> 0 Then
+                For Each upnode As Xml.XmlElement In saaupd.DocumentElement.ChildNodes
+                    Dim planename As String = upnode.Attributes("name").Value
+                    For a = 1 To Len(planename)
+                        If Mid(planename, a, 1) = "(" Then
+                            planename = Mid(upnode.Attributes("name").Value, 1, a - 1)
+                            Exit For
+                        End If
+                    Next
+                    For a = 1 To bpcolle.Count
+                        bplane = bpcolle(a)
+                        If planename = bplane.name Then
+                            upnode.SetAttribute("id", bplane.id)
+                        End If
+                    Next
+                Next
+            End If
+
             saaupd.Save(Application.StartupPath + "\data\SAAuserplanedata.xml")
         End If
     End Sub

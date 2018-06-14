@@ -160,7 +160,7 @@ Partial Class SAAS
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(95, 12)
         Me.Label5.TabIndex = 12
-        Me.Label5.Text = "程序版本：0.2.2"
+        Me.Label5.Text = "程序版本：0.2.3"
         '
         'Label6
         '

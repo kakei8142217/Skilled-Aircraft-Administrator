@@ -55,4 +55,10 @@
   <restrict id="250" name="锁定三格" anycplane="0" needcfighter="0" needcboomer="0" needctorpedo="0" needlso="0" anywplane="2" needwfboomer="0" />
   <restrict id="251" name="锁定四格" anycplane="0" needcfighter="0" needcboomer="0" needctorpedo="0" needlso="0" anywplane="1" needwfboomer="0" />
   <restrict id="252" name="无限制" anycplane="0" needcfighter="0" needcboomer="0" needctorpedo="0" needlso="0" anywplane="5" needwfboomer="0" />
+  <restrict id="260" name="锁定两格+水爆" anycplane="2" needcfighter="0" needcboomer="0" needctorpedo="0" needlso="0" anywplane="0" needwfboomer="1" />
+  <restrict id="261" name="锁定三格+水爆" anycplane="1" needcfighter="0" needcboomer="0" needctorpedo="0" needlso="0" anywplane="0" needwfboomer="1" />
+  <restrict id="262" name="锁定四格+水爆" anycplane="0" needcfighter="0" needcboomer="0" needctorpedo="0" needlso="0" anywplane="0" needwfboomer="1" />
+  <restrict id="263" name="锁定三格" anycplane="2" needcfighter="0" needcboomer="0" needctorpedo="0" needlso="0" anywplane="0" needwfboomer="0" />
+  <restrict id="264" name="锁定四格" anycplane="1" needcfighter="0" needcboomer="0" needctorpedo="0" needlso="0" anywplane="0" needwfboomer="0" />
+  <restrict id="265" name="无限制" anycplane="5" needcfighter="0" needcboomer="0" needctorpedo="0" needlso="0" anywplane="0" needwfboomer="0" />
 </restrictdata>
