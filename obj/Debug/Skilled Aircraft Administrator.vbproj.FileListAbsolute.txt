@@ -3,11 +3,12 @@ F:\分类数据\个人开发\Skilled Aircraft Administrator\Skilled Aircraft Adm
 F:\分类数据\个人开发\Skilled Aircraft Administrator\Skilled Aircraft Administrator\bin\Debug\Skilled Aircraft Administrator.pdb
 F:\分类数据\个人开发\Skilled Aircraft Administrator\Skilled Aircraft Administrator\bin\Debug\Skilled Aircraft Administrator.xml
 F:\分类数据\个人开发\Skilled Aircraft Administrator\Skilled Aircraft Administrator\obj\Debug\Skilled Aircraft Administrator.vbprojResolveAssemblyReference.cache
-F:\分类数据\个人开发\Skilled Aircraft Administrator\Skilled Aircraft Administrator\obj\Debug\Skilled_Aircraft_Administrator.SAAM.resources
 F:\分类数据\个人开发\Skilled Aircraft Administrator\Skilled Aircraft Administrator\obj\Debug\Skilled_Aircraft_Administrator.Resources.resources
-F:\分类数据\个人开发\Skilled Aircraft Administrator\Skilled Aircraft Administrator\obj\Debug\Skilled_Aircraft_Administrator.SAAS.resources
 F:\分类数据\个人开发\Skilled Aircraft Administrator\Skilled Aircraft Administrator\obj\Debug\Skilled Aircraft Administrator.vbproj.GenerateResource.Cache
 F:\分类数据\个人开发\Skilled Aircraft Administrator\Skilled Aircraft Administrator\obj\Debug\Skilled Aircraft Administrator.exe
 F:\分类数据\个人开发\Skilled Aircraft Administrator\Skilled Aircraft Administrator\obj\Debug\Skilled Aircraft Administrator.xml
 F:\分类数据\个人开发\Skilled Aircraft Administrator\Skilled Aircraft Administrator\obj\Debug\Skilled Aircraft Administrator.pdb
-F:\分类数据\个人开发\Skilled Aircraft Administrator\Skilled Aircraft Administrator\obj\Debug\Skilled_Aircraft_Administrator.SAAW.resources
+F:\分类数据\个人开发\Skilled Aircraft Administrator\Skilled Aircraft Administrator\obj\Debug\Skilled_Aircraft_Administrator.SAA_ddrank_form.resources
+F:\分类数据\个人开发\Skilled Aircraft Administrator\Skilled Aircraft Administrator\obj\Debug\Skilled_Aircraft_Administrator.SAA_plane_form.resources
+F:\分类数据\个人开发\Skilled Aircraft Administrator\Skilled Aircraft Administrator\obj\Debug\Skilled_Aircraft_Administrator.SAA_setting_form.resources
+F:\分类数据\个人开发\Skilled Aircraft Administrator\Skilled Aircraft Administrator\obj\Debug\Skilled_Aircraft_Administrator.SAA_map_form.resources

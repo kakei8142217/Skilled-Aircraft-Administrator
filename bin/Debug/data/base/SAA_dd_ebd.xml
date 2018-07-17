@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="gb2312"?>
+<ddextrabuffdata version="version3">
+  <ddextrabuff id="1_293_0_10_100_220" classification="1" equipmentid="293" improvemin="0" improvemax="10" needshiptypeid="0" typemin="100" typemax="220" buff1st="2" buff2nd="2" buff3rd="2" buff3th="2" />
+  <ddextrabuff id="1_294_0_10_320_320" classification="1" equipmentid="294" improvemin="0" improvemax="10" needshiptypeid="0" typemin="320" typemax="320" buff1st="1" buff2nd="1" buff3rd="1" buff3th="1" />
+  <ddextrabuff id="1_63_0_10_S145" classification="1" equipmentid="63" improvemin="0" improvemax="10" needshiptypeid="145" typemin="9990" typemax="9990" buff1st="1" buff2nd="1" buff3rd="1" buff3th="1" />
+  <ddextrabuff id="1_63_0_10_S144" classification="1" equipmentid="63" improvemin="0" improvemax="10" needshiptypeid="144" typemin="9990" typemax="9990" buff1st="2" buff2nd="2" buff3rd="2" buff3th="2" />
+  <ddextrabuff id="1_266_0_10_700_915" classification="1" equipmentid="266" improvemin="0" improvemax="10" needshiptypeid="0" typemin="700" typemax="915" buff1st="1" buff2nd="1" buff3rd="1" buff3th="1" />
+  <ddextrabuff id="1_266_0_10_920_920" classification="1" equipmentid="266" improvemin="0" improvemax="10" needshiptypeid="0" typemin="920" typemax="920" buff1st="2" buff2nd="3" buff3rd="1" buff3th="0" />
+  <ddextrabuff id="1_267_0_10_900_915" classification="1" equipmentid="267" improvemin="0" improvemax="10" needshiptypeid="0" typemin="900" typemax="915" buff1st="1" buff2nd="1" buff3rd="1" buff3th="1" />
+  <ddextrabuff id="1_267_0_10_1000_1010" classification="1" equipmentid="267" improvemin="0" improvemax="10" needshiptypeid="0" typemin="1000" typemax="1010" buff1st="2" buff2nd="2" buff3rd="2" buff3th="2" />
+  <ddextrabuff id="1_267_0_10_1100_1110" classification="1" equipmentid="267" improvemin="0" improvemax="10" needshiptypeid="0" typemin="1100" typemax="1110" buff1st="2" buff2nd="2" buff3rd="2" buff3th="2" />
+  <ddextrabuff id="1_267_0_10_920_920" classification="1" equipmentid="267" improvemin="0" improvemax="10" needshiptypeid="0" typemin="920" typemax="920" buff1st="2" buff2nd="1" buff3rd="1" buff3th="0" />
+  <ddextrabuff id="1_267_0_10_1020_1020" classification="1" equipmentid="267" improvemin="0" improvemax="10" needshiptypeid="0" typemin="1020" typemax="1020" buff1st="3" buff2nd="3" buff3rd="3" buff3th="3" />
+  <ddextrabuff id="1_229_10_10_100_220" classification="1" equipmentid="229" improvemin="10" improvemax="10" needshiptypeid="0" typemin="100" typemax="220" buff1st="1" buff2nd="1" buff3rd="1" buff3th="1" />
+  <ddextrabuff id="1_285_0_9_320_320" classification="1" equipmentid="285" improvemin="0" improvemax="9" needshiptypeid="0" typemin="320" typemax="320" buff1st="2" buff2nd="2" buff3rd="2" buff3th="2" />
+  <ddextrabuff id="1_285_10_10_320_320" classification="1" equipmentid="285" improvemin="10" improvemax="10" needshiptypeid="0" typemin="320" typemax="320" buff1st="3" buff2nd="3" buff3rd="3" buff3th="3" />
+  <ddextrabuff id="1_285_0_9_420_420" classification="1" equipmentid="285" improvemin="0" improvemax="9" needshiptypeid="0" typemin="420" typemax="420" buff1st="2" buff2nd="2" buff3rd="2" buff3th="2" />
+  <ddextrabuff id="1_285_10_10_420_420" classification="1" equipmentid="285" improvemin="10" improvemax="10" needshiptypeid="0" typemin="420" typemax="420" buff1st="3" buff2nd="3" buff3rd="3" buff3th="3" />
+  <ddextrabuff id="1_285_0_9_520_520" classification="1" equipmentid="285" improvemin="0" improvemax="9" needshiptypeid="0" typemin="520" typemax="520" buff1st="2" buff2nd="2" buff3rd="2" buff3th="2" />
+  <ddextrabuff id="1_285_10_10_520_520" classification="1" equipmentid="285" improvemin="10" improvemax="10" needshiptypeid="0" typemin="520" typemax="520" buff1st="3" buff2nd="3" buff3rd="3" buff3th="3" />
+  <ddextrabuff id="1_285_0_9_620_620" classification="1" equipmentid="285" improvemin="0" improvemax="9" needshiptypeid="0" typemin="620" typemax="620" buff1st="2" buff2nd="2" buff3rd="2" buff3th="2" />
+  <ddextrabuff id="1_285_10_10_620_620" classification="1" equipmentid="285" improvemin="10" improvemax="10" needshiptypeid="0" typemin="620" typemax="620" buff1st="3" buff2nd="3" buff3rd="3" buff3th="3" />
+  <ddextrabuff id="1_15_0_10_920_920" classification="1" equipmentid="15" improvemin="0" improvemax="10" needshiptypeid="0" typemin="920" typemax="920" buff1st="2" buff2nd="2" buff3rd="0" buff3th="0" />
+  <ddextrabuff id="1_286_0_4_920_920" classification="1" equipmentid="286" improvemin="0" improvemax="4" needshiptypeid="0" typemin="920" typemax="920" buff1st="2" buff2nd="2" buff3rd="2" buff3th="2" />
+  <ddextrabuff id="1_286_5_9_920_920" classification="1" equipmentid="286" improvemin="5" improvemax="9" needshiptypeid="0" typemin="920" typemax="920" buff1st="3" buff2nd="3" buff3rd="3" buff3th="3" />
+  <ddextrabuff id="1_286_10_10_920_920" classification="1" equipmentid="286" improvemin="10" improvemax="10" needshiptypeid="0" typemin="920" typemax="920" buff1st="4" buff2nd="4" buff3rd="4" buff3th="4" />
+  <ddextrabuff id="1_286_0_9_720_720" classification="1" equipmentid="286" improvemin="0" improvemax="9" needshiptypeid="0" typemin="720" typemax="720" buff1st="2" buff2nd="2" buff3rd="2" buff3th="2" />
+  <ddextrabuff id="1_286_10_10_720_720" classification="1" equipmentid="286" improvemin="10" improvemax="10" needshiptypeid="0" typemin="720" typemax="720" buff1st="3" buff2nd="3" buff3rd="3" buff3th="3" />
+  <ddextrabuff id="1_286_0_9_820_820" classification="1" equipmentid="286" improvemin="0" improvemax="9" needshiptypeid="0" typemin="820" typemax="820" buff1st="2" buff2nd="2" buff3rd="2" buff3th="2" />
+  <ddextrabuff id="1_286_10_10_820_820" classification="1" equipmentid="286" improvemin="10" improvemax="10" needshiptypeid="0" typemin="820" typemax="820" buff1st="3" buff2nd="3" buff3rd="3" buff3th="3" />
+  <ddextrabuff id="1_286_0_9_1020_1020" classification="1" equipmentid="286" improvemin="0" improvemax="9" needshiptypeid="0" typemin="1020" typemax="1020" buff1st="2" buff2nd="2" buff3rd="2" buff3th="2" />
+  <ddextrabuff id="1_286_10_10_1020_1020" classification="1" equipmentid="286" improvemin="10" improvemax="10" needshiptypeid="0" typemin="1020" typemax="1020" buff1st="3" buff2nd="3" buff3rd="3" buff3th="3" />
+  <ddextrabuff id="2_294_0_10" classification="2" equipmentid="294" improvemin="0" improvemax="10" needshiptypeid="0" typemin="0" typemax="0" buff1st="0" buff2nd="0" buff3rd="0" buff3th="0">
+    <needddshiptype id="2_294_0_10_320_320" needshiptypeid="0" typemin="320" typemax="320" buffone="4" bufftwo="6" buffthree="6" bufffore="6">
+      <needddequipment id="2_294_0_10_320_320_125_0_10" needequipmentid="125" improvemin="0" improvemax="10" />
+      <needddequipment id="2_294_0_10_320_320_285_0_10" needequipmentid="285" improvemin="0" improvemax="10" />
+    </needddshiptype>
+  </ddextrabuff>
+  <ddextrabuff id="2_28_0_10" classification="2" equipmentid="28" improvemin="0" improvemax="10" needshiptypeid="0" typemin="0" typemax="0" buff1st="0" buff2nd="0" buff3rd="0" buff3th="0">
+    <needddshiptype id="2_28_0_10_100_220" needshiptypeid="0" typemin="100" typemax="220" buffone="2" bufftwo="2" buffthree="2" bufffore="2">
+      <needddequipment id="2_28_0_10_100_220_229_10_10" needequipmentid="229" improvemin="10" improvemax="10" />
+    </needddshiptype>
+    <needddshiptype id="2_28_0_10_320_320" needshiptypeid="0" typemin="320" typemax="320" buffone="4" bufftwo="4" buffthree="4" bufffore="4">
+      <needddequipment id="2_28_0_10_320_320_294_0_10" needequipmentid="294" improvemin="0" improvemax="10" />
+    </needddshiptype>
+    <needddshiptype id="2_28_0_10_700_820" needshiptypeid="0" typemin="700" typemax="820" buffone="4" bufftwo="4" buffthree="4" bufffore="4">
+      <needddequipment id="2_28_0_10_700_820_266_0_10" needequipmentid="266" improvemin="0" improvemax="10" />
+    </needddshiptype>
+    <needddshiptype id="2_28_0_10_900_920" needshiptypeid="0" typemin="900" typemax="920" buffone="5" bufftwo="5" buffthree="5" bufffore="5">
+      <needddequipment id="2_28_0_10_900_920_266_0_10" needequipmentid="266" improvemin="0" improvemax="10" />
+    </needddshiptype>
+    <needddshiptype id="2_28_0_10_1110_1110" needshiptypeid="0" typemin="1110" typemax="1110" buffone="4" bufftwo="4" buffthree="4" bufffore="4">
+      <needddequipment id="2_28_0_10_1110_1110_267_0_10" needequipmentid="267" improvemin="0" improvemax="10" />
+    </needddshiptype>
+    <needddshiptype id="2_28_0_10_1020_1020" needshiptypeid="0" typemin="1020" typemax="1020" buffone="7" bufftwo="7" buffthree="7" bufffore="7">
+      <needddequipment id="2_28_0_10_1020_1020_267_0_10" needequipmentid="267" improvemin="0" improvemax="10" />
+    </needddshiptype>
+  </ddextrabuff>
+  <ddextrabuff id="2_29_0_10" classification="2" equipmentid="29" improvemin="0" improvemax="10" needshiptypeid="0" typemin="0" typemax="0" buff1st="0" buff2nd="0" buff3rd="0" buff3th="0">
+    <needddshiptype id="2_29_0_10_100_220" needshiptypeid="0" typemin="100" typemax="220" buffone="2" bufftwo="2" buffthree="2" bufffore="2">
+      <needddequipment id="2_29_0_10_100_220_229_10_10" needequipmentid="229" improvemin="10" improvemax="10" />
+    </needddshiptype>
+    <needddshiptype id="2_29_0_10_320_320" needshiptypeid="0" typemin="320" typemax="320" buffone="4" bufftwo="4" buffthree="4" bufffore="4">
+      <needddequipment id="2_29_0_10_320_320_294_0_10" needequipmentid="294" improvemin="0" improvemax="10" />
+    </needddshiptype>
+    <needddshiptype id="2_29_0_10_700_820" needshiptypeid="0" typemin="700" typemax="820" buffone="4" bufftwo="4" buffthree="4" bufffore="4">
+      <needddequipment id="2_29_0_10_700_820_266_0_10" needequipmentid="266" improvemin="0" improvemax="10" />
+    </needddshiptype>
+    <needddshiptype id="2_29_0_10_900_920" needshiptypeid="0" typemin="900" typemax="920" buffone="5" bufftwo="5" buffthree="5" bufffore="5">
+      <needddequipment id="2_29_0_10_900_920_266_0_10" needequipmentid="266" improvemin="0" improvemax="10" />
+    </needddshiptype>
+    <needddshiptype id="2_29_0_10_1110_1110" needshiptypeid="0" typemin="1110" typemax="1110" buffone="4" bufftwo="4" buffthree="4" bufffore="4">
+      <needddequipment id="2_29_0_10_1110_1110_267_0_10" needequipmentid="267" improvemin="0" improvemax="10" />
+    </needddshiptype>
+    <needddshiptype id="2_29_0_10_1020_1020" needshiptypeid="0" typemin="1020" typemax="1020" buffone="7" bufftwo="7" buffthree="7" bufffore="7">
+      <needddequipment id="2_29_0_10_1020_1020_267_0_10" needequipmentid="267" improvemin="0" improvemax="10" />
+    </needddshiptype>
+  </ddextrabuff>
+  <ddextrabuff id="2_88_0_10" classification="2" equipmentid="88" improvemin="0" improvemax="10" needshiptypeid="0" typemin="0" typemax="0" buff1st="0" buff2nd="0" buff3rd="0" buff3th="0">
+    <needddshiptype id="2_88_0_10_100_220" needshiptypeid="0" typemin="100" typemax="220" buffone="2" bufftwo="2" buffthree="2" bufffore="2">
+      <needddequipment id="2_88_0_10_100_220_229_10_10" needequipmentid="229" improvemin="10" improvemax="10" />
+    </needddshiptype>
+    <needddshiptype id="2_88_0_10_320_320" needshiptypeid="0" typemin="320" typemax="320" buffone="4" bufftwo="4" buffthree="4" bufffore="4">
+      <needddequipment id="2_88_0_10_320_320_294_0_10" needequipmentid="294" improvemin="0" improvemax="10" />
+    </needddshiptype>
+    <needddshiptype id="2_88_0_10_700_820" needshiptypeid="0" typemin="700" typemax="820" buffone="4" bufftwo="4" buffthree="4" bufffore="4">
+      <needddequipment id="2_88_0_10_700_820_266_0_10" needequipmentid="266" improvemin="0" improvemax="10" />
+    </needddshiptype>
+    <needddshiptype id="2_88_0_10_900_920" needshiptypeid="0" typemin="900" typemax="920" buffone="5" bufftwo="5" buffthree="5" bufffore="5">
+      <needddequipment id="2_88_0_10_900_920_266_0_10" needequipmentid="266" improvemin="0" improvemax="10" />
+    </needddshiptype>
+    <needddshiptype id="2_88_0_10_1110_1110" needshiptypeid="0" typemin="1110" typemax="1110" buffone="4" bufftwo="4" buffthree="4" bufffore="4">
+      <needddequipment id="2_88_0_10_1110_1110_267_0_10" needequipmentid="267" improvemin="0" improvemax="10" />
+    </needddshiptype>
+    <needddshiptype id="2_88_0_10_1020_1020" needshiptypeid="0" typemin="1020" typemax="1020" buffone="7" bufftwo="7" buffthree="7" bufffore="7">
+      <needddequipment id="2_88_0_10_1020_1020_267_0_10" needequipmentid="267" improvemin="0" improvemax="10" />
+    </needddshiptype>
+  </ddextrabuff>
+  <ddextrabuff id="2_240_0_10" classification="2" equipmentid="240" improvemin="0" improvemax="10" needshiptypeid="0" typemin="0" typemax="0" buff1st="0" buff2nd="0" buff3rd="0" buff3th="0">
+    <needddshiptype id="2_240_0_10_100_220" needshiptypeid="0" typemin="100" typemax="220" buffone="2" bufftwo="2" buffthree="2" bufffore="2">
+      <needddequipment id="2_240_0_10_100_220_229_10_10" needequipmentid="229" improvemin="10" improvemax="10" />
+    </needddshiptype>
+    <needddshiptype id="2_240_0_10_320_320" needshiptypeid="0" typemin="320" typemax="320" buffone="4" bufftwo="4" buffthree="4" bufffore="4">
+      <needddequipment id="2_240_0_10_320_320_294_0_10" needequipmentid="294" improvemin="0" improvemax="10" />
+    </needddshiptype>
+    <needddshiptype id="2_240_0_10_700_820" needshiptypeid="0" typemin="700" typemax="820" buffone="4" bufftwo="4" buffthree="4" bufffore="4">
+      <needddequipment id="2_240_0_10_700_820_266_0_10" needequipmentid="266" improvemin="0" improvemax="10" />
+    </needddshiptype>
+    <needddshiptype id="2_240_0_10_900_920" needshiptypeid="0" typemin="900" typemax="920" buffone="5" bufftwo="5" buffthree="5" bufffore="5">
+      <needddequipment id="2_240_0_10_900_920_266_0_10" needequipmentid="266" improvemin="0" improvemax="10" />
+    </needddshiptype>
+    <needddshiptype id="2_240_0_10_1110_1110" needshiptypeid="0" typemin="1110" typemax="1110" buffone="4" bufftwo="4" buffthree="4" bufffore="4">
+      <needddequipment id="2_240_0_10_1110_1110_267_0_10" needequipmentid="267" improvemin="0" improvemax="10" />
+    </needddshiptype>
+    <needddshiptype id="2_240_0_10_1020_1020" needshiptypeid="0" typemin="1020" typemax="1020" buffone="7" bufftwo="7" buffthree="7" bufffore="7">
+      <needddequipment id="2_240_0_10_1020_1020_267_0_10" needequipmentid="267" improvemin="0" improvemax="10" />
+    </needddshiptype>
+  </ddextrabuff>
+</ddextrabuffdata>

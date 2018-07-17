@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="gb2312"?>
+<planeequipmentdata version="version1">
+  <plane id="19" name="九六式舰战" classification="1" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="249" name="Fulmar" classification="1" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="197" name="F4F-3" classification="1" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="228" name="九六式舰战改" classification="1" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="181" name="零战32型" classification="1" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="20" name="零战21型" classification="1" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="198" name="F4F-4" classification="1" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="21" name="零战52型" classification="1" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="184" name="Re.2001OR改" classification="1" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="158" name="Bf109T改" classification="1" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="182" name="零战32型熟练" classification="1" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="205" name="F6F-3" classification="1" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="96" name="零战21型熟练" classification="1" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="55" name="紫电改二" classification="1" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="109" name="零战52型丙601" classification="1" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="155" name="零战21型付岩本小队" classification="1" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="152" name="零战52型熟练" classification="1" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="252" name="Seafire Mk.III 改" classification="1" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="22" name="烈风" classification="1" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="159" name="Fw190T改" classification="1" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="153" name="零战52型丙付岩井小队" classification="1" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="271" name="紫电改四" classification="1" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="206" name="F6F-5" classification="1" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="189" name="Re.2005改" classification="1" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="156" name="零战52型甲付岩本小队" classification="1" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="110" name="烈风601空" classification="1" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="53" name="烈风改" classification="1" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="157" name="零战53型岩本队" classification="1" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="56" name="震电改" classification="1" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="254" name="F6F-3N" classification="1" antibombing="0" intercept="0" nightfighting="1" />
+  <plane id="255" name="F6F-5N" classification="1" antibombing="0" intercept="0" nightfighting="1" />
+  <plane id="277" name="FM-2" classification="2" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="60" name="零战62型爆战" classification="2" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="154" name="零战62型爆战岩井队" classification="2" antibombing="0" intercept="0" nightfighting="2" />
+  <plane id="219" name="零战63型爆战" classification="2" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="233" name="F4U-1D" classification="2" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="248" name="Skua" classification="3" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="23" name="九九式舰爆" classification="3" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="195" name="SBD" classification="3" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="97" name="九九式舰爆熟练" classification="3" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="24" name="彗星" classification="3" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="64" name="Ju87C改" classification="3" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="57" name="彗星一二甲" classification="3" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="99" name="九九式舰爆江草队" classification="3" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="111" name="彗星601空" classification="3" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="148" name="试制南山" classification="3" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="100" name="彗星江草队" classification="3" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="291" name="彗星22型634空" classification="3" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="292" name="彗星22型634空熟练" classification="3" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="242" name="剑鱼" classification="4" antibombing="0" intercept="0" nightfighting="2" />
+  <plane id="188" name="Re.2001 G改" classification="4" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="16" name="九七式舰攻" classification="4" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="196" name="TBD" classification="4" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="243" name="剑鱼Mk.II熟练" classification="4" antibombing="0" intercept="0" nightfighting="2" />
+  <plane id="82" name="九七式舰攻931空" classification="4" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="17" name="天山" classification="4" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="98" name="九七式舰攻熟练" classification="4" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="244" name="剑鱼MK.III熟练" classification="4" antibombing="0" intercept="0" nightfighting="2" />
+  <plane id="83" name="天山931空" classification="4" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="256" name="TBF" classification="4" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="18" name="流星" classification="4" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="112" name="天山601空" classification="4" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="93" name="九七式舰攻友永队" classification="4" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="143" name="九七式舰攻村田队" classification="4" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="52" name="流星改" classification="4" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="113" name="流星601空" classification="4" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="94" name="天山友永队" classification="4" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="144" name="天山村田队" classification="4" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="257" name="TBM-3D" classification="4" antibombing="0" intercept="0" nightfighting="1" />
+  <plane id="199" name="喷气式景云改" classification="5" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="200" name="橘花改" classification="5" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="54" name="彩云" classification="6" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="212" name="彩云东卡罗琳空" classification="6" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="273" name="彩云侦四" classification="6" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="61" name="二式舰侦" classification="7" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="258" name="夜战要员" classification="8" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="259" name="夜战要员+熟练甲板员" classification="8" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="164" name="Ro.44" classification="11" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="165" name="二式水战改" classification="11" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="215" name="Ro.44 bis" classification="11" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="216" name="二式水战改熟练" classification="11" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="217" name="强风改" classification="11" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="26" name="瑞云" classification="12" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="194" name="Late 298B" classification="12" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="79" name="瑞云634空" classification="12" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="207" name="瑞云631空" classification="12" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="80" name="瑞云12型" classification="12" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="81" name="瑞云12型634空" classification="12" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="237" name="瑞云634空熟练" classification="12" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="62" name="试制晴岚" classification="12" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="208" name="晴岚631空" classification="12" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="178" name="PBY-5A Catalina" classification="13" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="138" name="二式大艇" classification="13" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="107" name="舰队司令部设施" classification="21" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="272" name="游击部队司令部" classification="21" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="224" name="爆装一式战隼III改" classification="31" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="168" name="九六式陆攻" classification="31" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="169" name="一式陆攻" classification="31" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="180" name="一式陆攻二二型甲" classification="31" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="186" name="一式陆攻三四型" classification="31" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="170" name="一式陆攻野中队" classification="31" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="187" name="银河" classification="31" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="175" name="雷电" classification="32" antibombing="5" intercept="2" nightfighting="0" />
+  <plane id="201" name="紫电一一型" classification="32" antibombing="1" intercept="1" nightfighting="0" />
+  <plane id="202" name="紫电二一型紫电改" classification="32" antibombing="1" intercept="3" nightfighting="0" />
+  <plane id="221" name="一式战隼II型" classification="32" antibombing="0" intercept="5" nightfighting="0" />
+  <plane id="222" name="一式战隼III型甲" classification="32" antibombing="1" intercept="3" nightfighting="0" />
+  <plane id="250" name="Spitfire Mk.I" classification="32" antibombing="2" intercept="1" nightfighting="0" />
+  <plane id="223" name="一式战隼III型甲54队" classification="32" antibombing="1" intercept="3" nightfighting="0" />
+  <plane id="176" name="三式战飞燕" classification="32" antibombing="1" intercept="3" nightfighting="0" />
+  <plane id="185" name="三式战飞燕一型丁" classification="32" antibombing="2" intercept="3" nightfighting="0" />
+  <plane id="177" name="三式战飞燕224队" classification="32" antibombing="3" intercept="4" nightfighting="0" />
+  <plane id="251" name="Spitfire Mk.V" classification="32" antibombing="3" intercept="2" nightfighting="0" />
+  <plane id="218" name="四式战疾风" classification="32" antibombing="1" intercept="1" nightfighting="0" />
+  <plane id="253" name="Spitfire Mk.IX熟练" classification="32" antibombing="2" intercept="4" nightfighting="0" />
+  <plane id="225" name="一式战隼II型64队" classification="32" antibombing="1" intercept="5" nightfighting="0" />
+</planeequipmentdata>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="gb2312"?>
+<userddshiptypedata>
+  <myddshiptype id="2370910120" name="电改(91|12)" level="91" luck="12" enhanced="0" amountlist1="1" />
+  <myddshiptype id="4350990130" name="如月改二(99|13)" level="99" luck="13" enhanced="0" amountlist1="1" />
+  <myddshiptype id="1470990200" name="Верный(99|20)" level="99" luck="20" enhanced="0" amountlist1="1" />
+  <myddshiptype id="4340990140" name="睦月改二(99|14)" level="99" luck="14" enhanced="0" amountlist1="1" />
+  <myddshiptype id="1950990400" name="绫波改二(99|40)" level="99" luck="40" enhanced="0" amountlist1="1" />
+  <myddshiptype id="5480990170" name="文月改二(99|17)" level="99" luck="17" enhanced="0" amountlist1="1" />
+  <myddshiptype id="2600950120" name="三日月改(95|12)" level="95" luck="12" enhanced="0" amountlist1="1" />
+  <myddshiptype id="1440990210" name="夕立改二(99|21)" level="99" luck="21" enhanced="0" amountlist1="1" />
+  <myddshiptype id="4180990200" name="皋月改二(99|20)" level="99" luck="20" enhanced="0" amountlist1="1" />
+  <myddshiptype id="4970960160" name="白露改二(96|16)" level="96" luck="16" enhanced="0" amountlist1="1" />
+  <myddshiptype id="2360910120" name="雷改(91|12)" level="91" luck="12" enhanced="0" amountlist1="1" />
+  <myddshiptype id="1451350611" name="时雨改二(135|61|○)" level="135" luck="61" enhanced="1" amountlist1="1" />
+  <myddshiptype id="4980970170" name="村雨改二(97|17)" level="97" luck="17" enhanced="0" amountlist1="1" />
+  <myddshiptype id="4370910150" name="暁改二(91|15)" level="91" luck="15" enhanced="0" amountlist1="1" />
+  <myddshiptype id="3080990120" name="弥生改(99|12)" level="99" luck="12" enhanced="0" amountlist1="1" />
+  <myddshiptype id="5580950200" name="浜风乙改(95|20)" level="95" luck="20" enhanced="0" amountlist1="1" />
+  <myddshiptype id="4260910170" name="吹雪改二(91|17)" level="91" luck="17" enhanced="0" amountlist1="1" />
+  <myddshiptype id="2290990120" name="岛风改(99|12)" level="99" luck="12" enhanced="0" amountlist1="1" />
+  <myddshiptype id="3300990121" name="秋月改(99|12|○)" level="99" luck="12" enhanced="1" amountlist1="1" />
+  <myddshiptype id="5430980300" name="长波改二(98|30)" level="98" luck="30" enhanced="0" amountlist1="1" />
+  <myddshiptype id="4070950320" name="潮改二(95|32)" level="95" luck="32" enhanced="0" amountlist1="1" />
+  <myddshiptype id="3090990140" name="卯月改(99|14)" level="99" luck="14" enhanced="0" amountlist1="1" />
+  <myddshiptype id="3160950170" name="天津风改(95|17)" level="95" luck="17" enhanced="0" amountlist1="1" />
+  <myddshiptype id="2280990601" name="雪风改(99|60|○)" level="99" luck="60" enhanced="1" amountlist1="1" />
+  <myddshiptype id="4190940530" name="初霜改二(94|53)" level="94" luck="53" enhanced="0" amountlist1="1" />
+  <myddshiptype id="5560910180" name="浦风丁改(91|18)" level="91" luck="18" enhanced="0" amountlist1="1" />
+  <myddshiptype id="4200890150" name="丛云改二(89|15)" level="89" luck="15" enhanced="0" amountlist1="1" />
+  <myddshiptype id="4690990190" name="江风改二(99|19)" level="99" luck="19" enhanced="0" amountlist1="1" />
+  <myddshiptype id="3470970160" name="Libeccio改(97|16)" level="97" luck="16" enhanced="0" amountlist1="1" />
+  <myddshiptype id="3460990111" name="照月改(99|11|○)" level="99" luck="11" enhanced="1" amountlist1="1" />
+  <myddshiptype id="5570910240" name="矶风乙改(91|24)" level="91" luck="24" enhanced="0" amountlist1="1" />
+  <myddshiptype id="3440960180" name="朝霜改(96|18)" level="96" luck="18" enhanced="0" amountlist1="1" />
+  <myddshiptype id="4640980370" name="霞改二(98|37)" level="98" luck="37" enhanced="0" amountlist1="1" />
+  <myddshiptype id="3570990081" name="初月改(99|8|○)" level="99" luck="8" enhanced="1" amountlist1="1" />
+  <myddshiptype id="1990980170" name="大潮改二(98|17)" level="98" luck="17" enhanced="0" amountlist1="1" />
+  <myddshiptype id="4760970400" name="神风改(97|40)" level="97" luck="40" enhanced="0" amountlist1="1" />
+  <myddshiptype id="3630970300" name="春风改(97|30)" level="97" luck="30" enhanced="0" amountlist1="1" />
+  <myddshiptype id="4680980170" name="朝潮改二丁(98|17)" level="98" luck="17" enhanced="0" amountlist1="1" />
+  <myddshiptype id="3660990160" name="水无月改(99|16)" level="99" luck="16" enhanced="0" amountlist1="1" />
+  <myddshiptype id="3700970140" name="朝风改(97|14)" level="97" luck="14" enhanced="0" amountlist1="1" />
+  <myddshiptype id="4900980170" name="荒潮改二(98|17)" level="98" luck="17" enhanced="0" amountlist1="1" />
+  <myddshiptype id="3710960120" name="松风改(96|12)" level="96" luck="12" enhanced="0" amountlist1="1" />
+  <myddshiptype id="4700880370" name="霞改二乙(88|37)" level="88" luck="37" enhanced="0" amountlist1="1" />
+  <myddshiptype id="4630810170" name="朝潮改二(81|17)" level="81" luck="17" enhanced="0" amountlist1="1" />
+  <myddshiptype id="4890980180" name="満潮改二(98|18)" level="98" luck="18" enhanced="0" amountlist1="1" />
+  <myddshiptype id="5680910220" name="黑潮改二(91|22)" level="91" luck="22" enhanced="0" amountlist1="1" />
+  <myddshiptype id="5670910240" name="不知火改二(91|24)" level="91" luck="24" enhanced="0" amountlist1="1" />
+  <myddshiptype id="5370990371" name="凉月改(99|37|○)" level="99" luck="37" enhanced="1" amountlist1="1" />
+  <myddshiptype id="3940890550" name="Jervis改(89|55)" level="89" luck="55" enhanced="0" amountlist1="1" />
+  <myddshiptype id="3950980430" name="Ташкент改(98|43)" level="98" luck="43" enhanced="0" amountlist1="1" />
+  <myddshiptype id="1980900150" name="霰改二(90|15)" level="90" luck="15" enhanced="0" amountlist1="1" />
+  <myddshiptype id="5660910200" name="阳炎改二(91|20)" level="91" luck="20" enhanced="0" amountlist1="1" />
+  <myddshiptype id="6810910400" name="Samuel B.Roberts改(91|40)" level="91" luck="40" enhanced="0" amountlist1="1" />
+</userddshiptypedata>

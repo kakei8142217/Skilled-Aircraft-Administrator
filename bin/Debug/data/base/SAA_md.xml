@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="gb2312"?>
+<mapdata version="version2">
+  <map id="1-1">
+    <battle id="无制空" aavalue="0" aaadvantage="0" aaensured="0" max="0" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+  </map>
+  <map id="1-2">
+    <battle id="无制空" aavalue="0" aaadvantage="0" aaensured="0" max="0" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+  </map>
+  <map id="1-3">
+    <battle id="无制空" aavalue="0" aaadvantage="0" aaensured="0" max="0" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+  </map>
+  <map id="1-4">
+    <battle id="E" aavalue="16" aaadvantage="24" aaensured="48" max="0" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="F" aavalue="20" aaadvantage="30" aaensured="60" max="1" boss="1" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="I" aavalue="16" aaadvantage="24" aaensured="48" max="0" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+  </map>
+  <map id="1-5">
+    <battle id="F" aavalue="24" aaadvantage="36" aaensured="72" max="1" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+  </map>
+  <map id="1-6">
+    <battle id="B" aavalue="24" aaadvantage="36" aaensured="72" max="0" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="D" aavalue="132" aaadvantage="198" aaensured="396" max="1" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="F" aavalue="55" aaadvantage="83" aaensured="165" max="0" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="J" aavalue="118" aaadvantage="177" aaensured="354" max="0" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="L" aavalue="192" aaadvantage="288" aaensured="576" max="0" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+  </map>
+  <map id="2-1">
+    <battle id="C" aavalue="24" aaadvantage="36" aaensured="72" max="0" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="E" aavalue="28" aaadvantage="42" aaensured="84" max="1" boss="1" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="F" aavalue="24" aaadvantage="36" aaensured="72" max="0" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+  </map>
+  <map id="2-2">
+    <battle id="F" aavalue="54" aaadvantage="81" aaensured="162" max="1" boss="1" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+  </map>
+  <map id="2-3">
+    <battle id="F" aavalue="16" aaadvantage="24" aaensured="48" max="0" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="G" aavalue="37" aaadvantage="56" aaensured="111" max="1" boss="1" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="H" aavalue="26" aaadvantage="39" aaensured="78" max="0" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="K" aavalue="26" aaadvantage="39" aaensured="78" max="0" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+  </map>
+  <map id="2-4">
+    <battle id="D" aavalue="82" aaadvantage="123" aaensured="246" max="1" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="H" aavalue="82" aaadvantage="123" aaensured="246" max="1" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="N" aavalue="82" aaadvantage="123" aaensured="246" max="1" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="P" aavalue="82" aaadvantage="123" aaensured="246" max="1" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+  </map>
+  <map id="2-5">
+    <battle id="B" aavalue="23" aaadvantage="35" aaensured="69" max="0" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="I" aavalue="102" aaadvantage="153" aaensured="306" max="1" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+  </map>
+  <map id="3-1">
+    <battle id="C" aavalue="72" aaadvantage="108" aaensured="216" max="1" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="E" aavalue="28" aaadvantage="42" aaensured="84" max="0" boss="1" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="F" aavalue="72" aaadvantage="108" aaensured="216" max="1" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+  </map>
+  <map id="3-2">
+    <battle id="C" aavalue="78" aaadvantage="117" aaensured="234" max="1" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+  </map>
+  <map id="3-3">
+    <battle id="C" aavalue="72" aaadvantage="108" aaensured="216" max="0" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="D" aavalue="79" aaadvantage="119" aaensured="237" max="1" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="E" aavalue="72" aaadvantage="108" aaensured="216" max="0" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="G" aavalue="55" aaadvantage="83" aaensured="165" max="0" boss="1" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="I" aavalue="79" aaadvantage="119" aaensured="237" max="1" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+  </map>
+  <map id="3-4">
+    <battle id="B" aavalue="48" aaadvantage="72" aaensured="144" max="0" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="D" aavalue="82" aaadvantage="123" aaensured="246" max="1" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="E" aavalue="56" aaadvantage="84" aaensured="168" max="0" boss="1" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="F" aavalue="48" aaadvantage="72" aaensured="144" max="0" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="I" aavalue="82" aaadvantage="123" aaensured="246" max="1" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="L" aavalue="48" aaadvantage="72" aaensured="144" max="0" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="N" aavalue="82" aaadvantage="123" aaensured="246" max="1" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+  </map>
+  <map id="3-5">
+    <battle id="C" aavalue="214" aaadvantage="321" aaensured="642" max="0" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="E" aavalue="23" aaadvantage="35" aaensured="69" max="0" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="F" aavalue="254" aaadvantage="381" aaensured="762" max="1" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="G" aavalue="23" aaadvantage="35" aaensured="69" max="0" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+  </map>
+  <map id="4-1">
+    <battle id="D" aavalue="48" aaadvantage="72" aaensured="144" max="1" boss="1" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+  </map>
+  <map id="4-2">
+    <battle id="D" aavalue="28" aaadvantage="42" aaensured="84" max="0" boss="1" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="H" aavalue="75" aaadvantage="113" aaensured="225" max="1" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="I" aavalue="24" aaadvantage="36" aaensured="72" max="0" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+  </map>
+  <map id="4-3">
+    <battle id="A" aavalue="48" aaadvantage="72" aaensured="144" max="0" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="G" aavalue="76" aaadvantage="114" aaensured="228" max="1" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="H" aavalue="72" aaadvantage="108" aaensured="216" max="0" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="I" aavalue="28" aaadvantage="42" aaensured="84" max="0" boss="1" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="J" aavalue="48" aaadvantage="72" aaensured="144" max="0" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="M" aavalue="28" aaadvantage="42" aaensured="84" max="0" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+  </map>
+  <map id="4-4">
+    <battle id="C" aavalue="76" aaadvantage="114" aaensured="228" max="0" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="F" aavalue="48" aaadvantage="72" aaensured="144" max="0" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="G" aavalue="104" aaadvantage="156" aaensured="312" max="1" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="H" aavalue="102" aaadvantage="153" aaensured="306" max="0" boss="1" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="I" aavalue="48" aaadvantage="72" aaensured="144" max="0" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="J" aavalue="76" aaadvantage="114" aaensured="228" max="0" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+  </map>
+  <map id="4-5">
+    <battle id="H" aavalue="23" aaadvantage="35" aaensured="69" max="0" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="J" aavalue="138" aaadvantage="207" aaensured="414" max="0" boss="1" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="M" aavalue="0" aaadvantage="0" aaensured="0" max="0" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+  </map>
+  <map id="5-1">
+    <battle id="A" aavalue="24" aaadvantage="36" aaensured="72" max="0" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="E" aavalue="104" aaadvantage="156" aaensured="312" max="1" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="F" aavalue="24" aaadvantage="36" aaensured="72" max="0" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="H" aavalue="72" aaadvantage="108" aaensured="216" max="0" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="I" aavalue="28" aaadvantage="42" aaensured="84" max="0" boss="1" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+  </map>
+  <map id="5-2">
+    <battle id="B" aavalue="24" aaadvantage="36" aaensured="72" max="0" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="C" aavalue="28" aaadvantage="42" aaensured="84" max="0" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="D" aavalue="97" aaadvantage="146" aaensured="291" max="1" boss="1" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="F" aavalue="24" aaadvantage="36" aaensured="72" max="0" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="J" aavalue="28" aaadvantage="42" aaensured="84" max="0" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+  </map>
+  <map id="5-3">
+    <battle id="E" aavalue="76" aaadvantage="114" aaensured="228" max="1" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="J" aavalue="28" aaadvantage="42" aaensured="84" max="0" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="K" aavalue="47" aaadvantage="71" aaensured="141" max="0" boss="1" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="K斩杀后" aavalue="75" aaadvantage="113" aaensured="225" max="0" boss="1" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+  </map>
+  <map id="5-4">
+    <battle id="A" aavalue="24" aaadvantage="36" aaensured="72" max="0" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="C" aavalue="28" aaadvantage="42" aaensured="84" max="0" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="G" aavalue="28" aaadvantage="42" aaensured="84" max="0" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="H" aavalue="116" aaadvantage="174" aaensured="348" max="1" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="I" aavalue="24" aaadvantage="36" aaensured="72" max="0" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="K" aavalue="102" aaadvantage="153" aaensured="306" max="0" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="O" aavalue="76" aaadvantage="114" aaensured="228" max="0" boss="1" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+  </map>
+  <map id="5-5">
+    <battle id="A" aavalue="140" aaadvantage="210" aaensured="420" max="0" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="B" aavalue="140" aaadvantage="210" aaensured="420" max="0" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="C" aavalue="23" aaadvantage="35" aaensured="69" max="0" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="D" aavalue="171" aaadvantage="257" aaensured="513" max="0" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="E" aavalue="107" aaadvantage="161" aaensured="321" max="0" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="F" aavalue="23" aaadvantage="35" aaensured="69" max="0" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="G" aavalue="107" aaadvantage="161" aaensured="321" max="0" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="H" aavalue="107" aaadvantage="161" aaensured="321" max="0" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="K" aavalue="201" aaadvantage="302" aaensured="603" max="0" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="M" aavalue="23" aaadvantage="35" aaensured="69" max="0" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="N" aavalue="251" aaadvantage="377" aaensured="753" max="1" boss="1" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+  </map>
+  <map id="6-1">
+    <battle id="B" aavalue="23" aaadvantage="35" aaensured="69" max="0" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="H" aavalue="180" aaadvantage="270" aaensured="540" max="1" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="K" aavalue="84" aaadvantage="126" aaensured="252" max="0" boss="1" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+  </map>
+  <map id="6-2">
+    <battle id="A" aavalue="48" aaadvantage="72" aaensured="144" max="0" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="B" aavalue="46" aaadvantage="69" aaensured="138" max="0" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="E" aavalue="168" aaadvantage="252" aaensured="504" max="1" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="H" aavalue="23" aaadvantage="35" aaensured="69" max="0" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="I" aavalue="102" aaadvantage="153" aaensured="306" max="0" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+    <battle id="K" aavalue="84" aaadvantage="126" aaensured="252" max="0" boss="1" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+  </map>
+  <map id="6-3">
+    <battle id="无制空" aavalue="0" aaadvantage="0" aaensured="0" max="0" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="0" />
+  </map>
+  <map id="6-4">
+    <battle id="A" aavalue="0" aaadvantage="0" aaensured="0" max="0" boss="0" afaavalue="1" afaaadvantage="2" afaaensured="3" airrange="1" />
+    <battle id="B" aavalue="0" aaadvantage="0" aaensured="0" max="0" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="1" />
+    <battle id="C" aavalue="24" aaadvantage="36" aaensured="72" max="0" boss="0" afaavalue="29" afaaadvantage="44" afaaensured="87" airrange="3" />
+    <battle id="D" aavalue="82" aaadvantage="123" aaensured="246" max="0" boss="0" afaavalue="82" afaaadvantage="123" afaaensured="246" airrange="2" />
+    <battle id="E" aavalue="0" aaadvantage="0" aaensured="0" max="0" boss="0" afaavalue="2" afaaadvantage="3" afaaensured="6" airrange="2" />
+    <battle id="F" aavalue="82" aaadvantage="123" aaensured="246" max="0" boss="0" afaavalue="82" afaaadvantage="123" afaaensured="246" airrange="4" />
+    <battle id="G" aavalue="82" aaadvantage="123" aaensured="246" max="0" boss="0" afaavalue="82" afaaadvantage="123" afaaensured="246" airrange="3" />
+    <battle id="H" aavalue="24" aaadvantage="36" aaensured="72" max="0" boss="0" afaavalue="29" afaaadvantage="44" afaaensured="87" airrange="7" />
+    <battle id="I" aavalue="105" aaadvantage="158" aaensured="315" max="0" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="6" />
+    <battle id="J" aavalue="132" aaadvantage="198" aaensured="396" max="1" boss="0" afaavalue="113" afaaadvantage="170" afaaensured="339" airrange="6" />
+    <battle id="K" aavalue="126" aaadvantage="189" aaensured="378" max="0" boss="0" afaavalue="130" afaaadvantage="195" afaaensured="390" airrange="7" />
+    <battle id="L" aavalue="46" aaadvantage="69" aaensured="138" max="0" boss="0" afaavalue="48" afaaadvantage="72" afaaensured="144" airrange="7" />
+    <battle id="M" aavalue="0" aaadvantage="0" aaensured="0" max="0" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="8" />
+    <battle id="N" aavalue="112" aaadvantage="168" aaensured="336" max="0" boss="1" afaavalue="112" afaaadvantage="168" afaaensured="336" airrange="5" />
+  </map>
+  <map id="6-5">
+    <battle id="A" aavalue="0" aaadvantage="0" aaensured="0" max="0" boss="0" afaavalue="1" afaaadvantage="2" afaaensured="3" airrange="1" />
+    <battle id="B" aavalue="0" aaadvantage="0" aaensured="0" max="0" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="1" />
+    <battle id="C" aavalue="132" aaadvantage="198" aaensured="396" max="0" boss="0" afaavalue="138" afaaadvantage="207" afaaensured="414" airrange="2" />
+    <battle id="D" aavalue="46" aaadvantage="69" aaensured="138" max="0" boss="0" afaavalue="49" afaaadvantage="74" afaaensured="147" airrange="3" />
+    <battle id="E" aavalue="0" aaadvantage="0" aaensured="0" max="0" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="3" />
+    <battle id="F" aavalue="0" aaadvantage="0" aaensured="0" max="0" boss="0" afaavalue="3" afaaadvantage="8" afaaensured="15" airrange="2" />
+    <battle id="G" aavalue="312" aaadvantage="468" aaensured="936" max="1" boss="0" afaavalue="313" afaaadvantage="470" afaaensured="939" airrange="4" />
+    <battle id="H" aavalue="206" aaadvantage="309" aaensured="618" max="0" boss="0" afaavalue="210" afaaadvantage="315" afaaensured="630" airrange="4" />
+    <battle id="I" aavalue="46" aaadvantage="69" aaensured="138" max="0" boss="0" afaavalue="47" afaaadvantage="71" afaaensured="141" airrange="3" />
+    <battle id="J" aavalue="23" aaadvantage="35" aaensured="69" max="0" boss="0" afaavalue="25" afaaadvantage="38" afaaensured="75" airrange="4" />
+    <battle id="K" aavalue="0" aaadvantage="0" aaensured="0" max="0" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="5" />
+    <battle id="L" aavalue="0" aaadvantage="0" aaensured="0" max="0" boss="0" afaavalue="0" afaaadvantage="0" afaaensured="0" airrange="5" />
+    <battle id="M" aavalue="312" aaadvantage="468" aaensured="936" max="1" boss="1" afaavalue="318" afaaadvantage="477" afaaensured="954" airrange="5" />
+    <battle id="基地空袭" aavalue="0" aaadvantage="0" aaensured="0" max="0" boss="0" afaavalue="313" afaaadvantage="470" afaaensured="939" airrange="0" />
+  </map>
+</mapdata>

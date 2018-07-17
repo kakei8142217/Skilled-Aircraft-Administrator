@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="gb2312"?>
+<smallgunequipmentdata version="version1">
+  <smallgun id="1" name="12cm单装炮" classification="1" />
+  <smallgun id="2" name="12.7cm连装炮" classification="1" />
+  <smallgun id="3" name="10cm连装高角炮" classification="1" />
+  <smallgun id="63" name="12.7cm连装炮B型改二" classification="1" />
+  <smallgun id="78" name="12.7cm单装炮" classification="1" />
+  <smallgun id="91" name="12.7cm连装高角炮后期型" classification="1" />
+  <smallgun id="122" name="10cm连装高角炮+高射装置" classification="1" />
+  <smallgun id="147" name="120mm连装炮" classification="1" />
+  <smallgun id="229" name="12.7cm单装高角炮后期型" classification="1" />
+  <smallgun id="266" name="12.7cm连装炮C型改二" classification="1" />
+  <smallgun id="267" name="12.7cm连装炮D型改二" classification="1" />
+  <smallgun id="280" name="QF 4.7inch炮 Mk.XII改" classification="1" />
+  <smallgun id="282" name="130mm B-13连装炮" classification="1" />
+  <smallgun id="284" name="5inch单装炮 Mk.30" classification="1" />
+  <smallgun id="293" name="12cm单装炮改二" classification="1" />
+  <smallgun id="294" name="12.7cm连装炮A型改二" classification="1" />
+  <smallgun id="295" name="12.7cm连装炮A型改三战改+高射" classification="1" />
+  <smallgun id="296" name="12.7cm连装炮B型改四战改+高射" classification="1" />
+  <smallgun id="13" name="61cm三连鱼雷" classification="2" />
+  <smallgun id="14" name="61cm四连鱼雷" classification="2" />
+  <smallgun id="15" name="61cm四连酸素鱼雷" classification="2" />
+  <smallgun id="58" name="61cm五连酸素鱼雷" classification="2" />
+  <smallgun id="67" name="53cm舰首酸素鱼雷" classification="2" />
+  <smallgun id="125" name="61cm三连酸素鱼雷" classification="2" />
+  <smallgun id="174" name="53cm连装鱼雷" classification="2" />
+  <smallgun id="179" name="试制61cm六连酸素鱼雷" classification="2" />
+  <smallgun id="283" name="533mm 三连鱼雷" classification="2" />
+  <smallgun id="285" name="61cm三连酸素鱼雷后期型" classification="2" />
+  <smallgun id="286" name="61cm四连酸素鱼雷后期型" classification="2" />
+  <smallgun id="28" name="22号水上电探" classification="3" />
+  <smallgun id="29" name="33号水上电探" classification="3" />
+  <smallgun id="88" name="22号水上电探改四" classification="3" />
+  <smallgun id="240" name="22号水上电探改四后期型" classification="3" />
+  <smallgun id="27" name="13号空电探" classification="4" />
+  <smallgun id="106" name="13号空电探改" classification="4" />
+  <smallgun id="129" name="熟练见张员" classification="5" />
+  <smallgun id="37" name="7.7mm机铳" classification="6" />
+  <smallgun id="38" name="12.7mm单装机铳" classification="6" />
+  <smallgun id="39" name="25mm连装机铳" classification="6" />
+  <smallgun id="40" name="25mm三连装机铳" classification="6" />
+  <smallgun id="49" name="25mm单装机铳" classification="6" />
+  <smallgun id="51" name="12cm30连装喷进炮" classification="6" />
+  <smallgun id="84" name="2cm 四连装FlaK 38" classification="6" />
+  <smallgun id="85" name="3.7cm FlaK M42" classification="6" />
+  <smallgun id="92" name="毘式40mm连装机铳" classification="6" />
+  <smallgun id="131" name="25mm三连装机铳 集中配备" classification="6" />
+  <smallgun id="173" name="Bofors 40mm四连装机关炮" classification="6" />
+  <smallgun id="191" name="QF 2磅8连装砰砰炮" classification="6" />
+  <smallgun id="274" name="12cm30连装喷进炮改二" classification="6" />
+  <smallgun id="74" name="探照灯" classification="7" />
+  <smallgun id="101" name="照明弾" classification="8" />
+  <smallgun id="46" name="九三式水中聴音机" classification="11" />
+  <smallgun id="47" name="三式水中探信仪" classification="11" />
+  <smallgun id="149" name="四式水中聴音机" classification="11" />
+  <smallgun id="260" name="Type124 ASDIC" classification="11" />
+  <smallgun id="261" name="Type144/147 ASDIC" classification="11" />
+  <smallgun id="262" name="HF/DF+Type144/147 ASDIC" classification="11" />
+  <smallgun id="44" name="九四式爆雷投射机" classification="12" />
+  <smallgun id="45" name="三式爆雷投射机" classification="12" />
+  <smallgun id="287" name="三式爆雷投射机 集中配备" classification="12" />
+  <smallgun id="288" name="试制15cm9连装対潜喷进炮" classification="12" />
+  <smallgun id="226" name="九五式爆雷" classification="13" />
+  <smallgun id="227" name="二式爆雷" classification="13" />
+  <smallgun id="126" name="WG42" classification="21" />
+  <smallgun id="68" name="大发动艇" classification="22" />
+  <smallgun id="166" name="大发动艇+战车&amp;陆战队" classification="22" />
+  <smallgun id="193" name="特大发动艇" classification="22" />
+  <smallgun id="230" name="特大发动艇+战车" classification="22" />
+  <smallgun id="167" name="特二式内火艇" classification="23" />
+  <smallgun id="33" name="改良型舰本式タービン" classification="31" />
+  <smallgun id="34" name="强化型舰本式缶" classification="32" />
+  <smallgun id="87" name="新型高温高圧缶" classification="32" />
+  <smallgun id="107" name="舰队司令部施设" classification="41" />
+  <smallgun id="272" name="游击部队 舰队司令部" classification="41" />
+  <smallgun id="75" name="ドラム缶输送用" classification="42" />
+  <smallgun id="120" name="91式高射装置" classification="43" />
+  <smallgun id="121" name="94式高射装置" classification="43" />
+  <smallgun id="72" name="増设バルジ中型舰" classification="44" />
+  <smallgun id="203" name="舰本 増设バルジ中型舰" classification="44" />
+  <smallgun id="268" name="北方迷彩+北方装备" classification="44" />
+</smallgunequipmentdata>
