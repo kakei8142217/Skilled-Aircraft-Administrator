@@ -261,6 +261,10 @@
                 basesmallgungroup(2).setdata(basesmallgun)
             Next
         End If
+        Dim torpedocount As Integer = 0
+        If torpedo IsNot Nothing Then
+            torpedocount = torpedo.Length
+        End If
         If gunlist IsNot Nothing Then
             For a = 0 To gunlist.Length - 1
                 basesmallgun = New basedata_class(2)
@@ -268,7 +272,7 @@
                 basesmallgun.setattribute(1, gunlist(a))
                 basesmallgungroup(0).setdata(basesmallgun)
                 basesmallgun = New basedata_class(2)
-                basesmallgun.setattribute(0, a + torpedo.Length - 1 + 1)
+                basesmallgun.setattribute(0, a + torpedocount - 1 + 1)
                 basesmallgun.setattribute(1, gunlist(a))
                 basesmallgungroup(2).setdata(basesmallgun)
             Next
