@@ -106,6 +106,7 @@
                 End If
 
                 Dim commacount As Integer
+                Dim commalist(6) As Integer
                 Dim idstart As Integer
                 Dim idlength As Integer
 
@@ -124,24 +125,34 @@
                 Dim shiptypeenhanced As Integer
 
                 If count <> 0 Then
+                    For a = 1 To Len(linestring(1))
+                        If Mid(linestring(1), a, 1) = "," Then
+                            commacount = commacount + 1
+                        End If
+                    Next
+                    If commacount = 66 Then
+                        commalist = {2, 3, 4, 25, 26, 55, 56}
+                    ElseIf commacount = 63 Then
+                        commalist = {2, 3, 4, 23, 24, 52, 53}
+                    End If
                     For a = 1 To count - 1
                         commacount = 0
                         For b = 1 To Len(linestring(a))
                             If Mid(linestring(a), b, 1) = "," Then
-                                If commacount = 2 Then
+                                If commacount = commalist(0) Then
                                     idstart = b + 1
-                                ElseIf commacount = 3 Then
+                                ElseIf commacount = commalist(1) Then
                                     idlength = b - idstart
                                     levelstart = b + 1
-                                ElseIf commacount = 4 Then
+                                ElseIf commacount = commalist(2) Then
                                     levellength = b - levelstart
-                                ElseIf commacount = 25 Then
+                                ElseIf commacount = commalist(3) Then
                                     enhancedstart = b + 1
-                                ElseIf commacount = 26 Then
+                                ElseIf commacount = commalist(4) Then
                                     enhancedlength = b - enhancedstart
-                                ElseIf commacount = 55 Then
+                                ElseIf commacount = commalist(5) Then
                                     luckstart = b + 1
-                                ElseIf commacount = 56 Then
+                                ElseIf commacount = commalist(6) Then
                                     lucklength = b - luckstart
                                 End If
                                 commacount = commacount + 1
@@ -289,7 +300,9 @@
                         Dim class2buffid As String = ddextrabuffgroup.getdata(buffid).getdatagroup.getid(d)
                         If userddshiptype.unit(ddshipgroup.ship(b).id).type >= ddextrabuffgroup.getdata(buffid).getdatagroup.getattribute(class2buffid, 2) And userddshiptype.unit(ddshipgroup.ship(b).id).type <= ddextrabuffgroup.getdata(buffid).getdatagroup.getattribute(class2buffid, 3) Then
                             gunneed = True
-                            needgunlist.Add(gunneed, b)
+                            If needgunlist.Contains(b) = False Then
+                                needgunlist.Add(gunneed, b)
+                            End If
                         End If
                     Next
                 End If

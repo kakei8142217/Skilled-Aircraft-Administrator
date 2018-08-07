@@ -12,6 +12,7 @@
 
         saa_plane = Me
         plUIcontrol.changeenhancedmode()
+        plUIcontrol.changelandbasemode()
 
 
         Dim cvshiptypecount As Integer = 1
@@ -29,6 +30,67 @@
             ComboBox3.Items.Add("使用列表" & a + 1)
         Next
         ComboBox3.SelectedIndex = 0
+
+        ComboBox4.Items.Add("待机")
+        ComboBox4.Items.Add("伤害输出")
+        ComboBox4.Items.Add("制空压制")
+        ComboBox4.Items.Add("基地防守")
+        ComboBox4.SelectedIndex = 0
+        For a = 1 To 15
+            ComboBox5.Items.Add(a)
+        Next
+        ComboBox5.SelectedIndex = 0
+        ComboBox6.Items.Add("制空值")
+        ComboBox6.Items.Add("航空优势")
+        ComboBox6.Items.Add("制空权确保")
+        ComboBox6.SelectedIndex = 0
+        ComboBox7.Items.Add("制空权丧失")
+        ComboBox7.Items.Add("航空劣势")
+        ComboBox7.Items.Add("航空均势")
+        ComboBox7.Items.Add("航空优势")
+        ComboBox7.Items.Add("制空权确保")
+        ComboBox7.SelectedIndex = 1
+
+        ComboBox8.Items.Add("待机")
+        ComboBox8.Items.Add("伤害输出")
+        ComboBox8.Items.Add("制空压制")
+        ComboBox8.Items.Add("基地防守")
+        ComboBox8.SelectedIndex = 0
+        For a = 1 To 15
+            ComboBox9.Items.Add(a)
+        Next
+        ComboBox9.SelectedIndex = 0
+        ComboBox10.Items.Add("制空值")
+        ComboBox10.Items.Add("航空优势")
+        ComboBox10.Items.Add("制空权确保")
+        ComboBox10.SelectedIndex = 0
+        ComboBox11.Items.Add("制空权丧失")
+        ComboBox11.Items.Add("航空劣势")
+        ComboBox11.Items.Add("航空均势")
+        ComboBox11.Items.Add("航空优势")
+        ComboBox11.Items.Add("制空权确保")
+        ComboBox11.SelectedIndex = 1
+
+        ComboBox12.Items.Add("待机")
+        ComboBox12.Items.Add("伤害输出")
+        ComboBox12.Items.Add("制空压制")
+        ComboBox12.Items.Add("基地防守")
+        ComboBox12.SelectedIndex = 0
+        For a = 1 To 15
+            ComboBox13.Items.Add(a)
+        Next
+        ComboBox13.SelectedIndex = 0
+        ComboBox14.Items.Add("制空值")
+        ComboBox14.Items.Add("航空优势")
+        ComboBox14.Items.Add("制空权确保")
+        ComboBox14.SelectedIndex = 0
+        ComboBox15.Items.Add("制空权丧失")
+        ComboBox15.Items.Add("航空劣势")
+        ComboBox15.Items.Add("航空均势")
+        ComboBox15.Items.Add("航空优势")
+        ComboBox15.Items.Add("制空权确保")
+        ComboBox15.SelectedIndex = 1
+
 
         Call list1refresh()
         Call list2refresh()
@@ -2148,5 +2210,40 @@
 
     Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
         plUIcontrol.changeenhancedmode()
+    End Sub
+
+    Private Sub CheckBox12_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox12.CheckedChanged
+        CheckBox13.Checked = CheckBox12.Checked
+        CheckBox14.Checked = CheckBox12.Checked
+        CheckBox13.Enabled = Not CheckBox12.Checked
+        CheckBox14.Enabled = Not CheckBox12.Checked
+    End Sub
+
+    Private Sub CheckBox13_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox13.CheckedChanged
+        ComboBox8.Visible = Not CheckBox13.Checked
+        ComboBox9.Visible = Not CheckBox13.Checked
+        ComboBox10.Visible = Not CheckBox13.Checked
+        Label10.Visible = Not CheckBox13.Checked
+        TextBox4.Visible = Not CheckBox13.Checked
+        Button13.Visible = Not CheckBox13.Checked
+        If CheckBox13.Checked = True And CheckBox14.Checked = True Then
+            CheckBox12.Checked = True
+            CheckBox13.Enabled = False
+            CheckBox14.Enabled = False
+        End If
+    End Sub
+
+    Private Sub CheckBox14_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox14.CheckedChanged
+        ComboBox12.Visible = Not CheckBox14.Checked
+        ComboBox13.Visible = Not CheckBox14.Checked
+        ComboBox14.Visible = Not CheckBox14.Checked
+        Label13.Visible = Not CheckBox14.Checked
+        TextBox5.Visible = Not CheckBox14.Checked
+        Button14.Visible = Not CheckBox14.Checked
+        If CheckBox13.Checked = True And CheckBox14.Checked = True Then
+            CheckBox12.Checked = True
+            CheckBox13.Enabled = False
+            CheckBox14.Enabled = False
+        End If
     End Sub
 End Class

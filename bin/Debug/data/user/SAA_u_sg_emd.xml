@@ -1,19 +1,25 @@
 <?xml version="1.0" encoding="gb2312"?>
-<usersmallgunequipmentdata version="00000000">
+<usersmallgunequipmentdata>
+  <smallgun id="26700" name="12.7cm连装炮D型改二(★0)" improve="0" amountlist1="3" amountlist2="0" fire="3" torpedo="0" />
+  <smallgun id="26600" name="12.7cm连装炮C型改二(★0)" improve="0" amountlist1="8" amountlist2="0" fire="3" torpedo="0" />
+  <smallgun id="6300" name="12.7cm连装炮B型改二(★0)" improve="0" amountlist1="16" amountlist2="0" fire="3" torpedo="0" />
+  <smallgun id="29500" name="12.7cm连装炮A型改三战改+高射(★0)" improve="0" amountlist1="0" amountlist2="0" fire="2" torpedo="0" />
+  <smallgun id="29600" name="12.7cm连装炮B型改四战改+高射(★0)" improve="0" amountlist1="1" amountlist2="0" fire="3" torpedo="0" />
+  <smallgun id="24000" name="22号水上电探改四后期型(★0)" improve="0" amountlist1="0" amountlist2="0" fire="1" torpedo="0" />
+  <smallgun id="28500" name="61cm三连酸素鱼雷后期型(★0)" improve="0" amountlist1="1" amountlist2="0" fire="0" torpedo="9" />
   <smallgun id="7500" name="ドラム缶输送用(★0)" improve="0" amountlist1="96" amountlist2="0" fire="0" torpedo="0" />
   <smallgun id="4506" name="三式爆雷投射机(★6)" improve="6" amountlist1="6" amountlist2="0" fire="0" torpedo="0" />
   <smallgun id="1500" name="61cm四连酸素鱼雷(★0)" improve="0" amountlist1="16" amountlist2="0" fire="0" torpedo="10" />
   <smallgun id="5806" name="61cm五连酸素鱼雷(★6)" improve="6" amountlist1="3" amountlist2="0" fire="0" torpedo="14.4494897427832" />
   <smallgun id="5800" name="61cm五连酸素鱼雷(★0)" improve="0" amountlist1="11" amountlist2="0" fire="0" torpedo="12" />
   <smallgun id="2700" name="13号空电探(★0)" improve="0" amountlist1="9" amountlist2="0" fire="0" torpedo="0" />
-  <smallgun id="6300" name="12.7cm连装炮B型改二(★0)" improve="0" amountlist1="16" amountlist2="0" fire="3" torpedo="0" />
   <smallgun id="10100" name="照明弾(★0)" improve="0" amountlist1="4" amountlist2="0" fire="0" torpedo="0" />
   <smallgun id="9200" name="毘式40mm连装机铳(★0)" improve="0" amountlist1="6" amountlist2="0" fire="0" torpedo="0" />
   <smallgun id="12000" name="91式高射装置(★0)" improve="0" amountlist1="6" amountlist2="0" fire="0" torpedo="0" />
   <smallgun id="12200" name="10cm连装高角炮+高射装置(★0)" improve="0" amountlist1="14" amountlist2="0" fire="3" torpedo="0" />
   <smallgun id="4400" name="九四式爆雷投射机(★0)" improve="0" amountlist1="3" amountlist2="0" fire="0" torpedo="0" />
-  <smallgun id="6800" name="大发动艇(★0)" improve="0" amountlist1="15" amountlist2="0" fire="0" torpedo="0" />
-  <smallgun id="4500" name="三式爆雷投射机(★0)" improve="0" amountlist1="5" amountlist2="0" fire="0" torpedo="0" />
+  <smallgun id="6800" name="大发动艇(★0)" improve="0" amountlist1="16" amountlist2="0" fire="0" torpedo="0" />
+  <smallgun id="4500" name="三式爆雷投射机(★0)" improve="0" amountlist1="6" amountlist2="0" fire="0" torpedo="0" />
   <smallgun id="4706" name="三式水中探信仪(★6)" improve="6" amountlist1="6" amountlist2="0" fire="0" torpedo="0" />
   <smallgun id="10700" name="舰队司令部施设(★0)" improve="0" amountlist1="1" amountlist2="0" fire="0" torpedo="0" />
   <smallgun id="10600" name="13号空电探改(★0)" improve="0" amountlist1="20" amountlist2="0" fire="0" torpedo="0" />
@@ -25,7 +31,7 @@
   <smallgun id="12500" name="61cm三连酸素鱼雷(★0)" improve="0" amountlist1="6" amountlist2="0" fire="0" torpedo="8" />
   <smallgun id="12100" name="94式高射装置(★0)" improve="0" amountlist1="3" amountlist2="0" fire="0" torpedo="0" />
   <smallgun id="12600" name="WG42(★0)" improve="0" amountlist1="7" amountlist2="0" fire="1" torpedo="0" />
-  <smallgun id="9100" name="12.7cm连装高角炮后期型(★0)" improve="0" amountlist1="25" amountlist2="0" fire="2" torpedo="0" />
+  <smallgun id="9100" name="12.7cm连装高角炮后期型(★0)" improve="0" amountlist1="27" amountlist2="0" fire="2" torpedo="0" />
   <smallgun id="13100" name="25mm三连装机铳 集中配备(★0)" improve="0" amountlist1="7" amountlist2="0" fire="0" torpedo="0" />
   <smallgun id="12900" name="熟练见张员(★0)" improve="0" amountlist1="15" amountlist2="0" fire="0" torpedo="0" />
   <smallgun id="7410" name="探照灯(★10)" improve="10" amountlist1="1" amountlist2="0" fire="0" torpedo="0" />
@@ -43,7 +49,7 @@
   <smallgun id="17400" name="53cm连装鱼雷(★0)" improve="0" amountlist1="4" amountlist2="0" fire="0" torpedo="3" />
   <smallgun id="17300" name="Bofors 40mm四连装机关炮(★0)" improve="0" amountlist1="2" amountlist2="0" fire="1" torpedo="0" />
   <smallgun id="17900" name="试制61cm六连酸素鱼雷(★0)" improve="0" amountlist1="1" amountlist2="0" fire="0" torpedo="14" />
-  <smallgun id="27400" name="12cm30连装喷进炮改二(★0)" improve="0" amountlist1="3" amountlist2="0" fire="0" torpedo="0" />
+  <smallgun id="27400" name="12cm30连装喷进炮改二(★0)" improve="0" amountlist1="4" amountlist2="0" fire="0" torpedo="0" />
   <smallgun id="2800" name="22号水上电探(★0)" improve="0" amountlist1="5" amountlist2="0" fire="0" torpedo="0" />
   <smallgun id="5808" name="61cm五连酸素鱼雷(★8)" improve="8" amountlist1="1" amountlist2="0" fire="0" torpedo="14.8284271247462" />
   <smallgun id="5809" name="61cm五连酸素鱼雷(★9)" improve="9" amountlist1="1" amountlist2="0" fire="0" torpedo="15" />
@@ -53,36 +59,26 @@
   <smallgun id="3300" name="改良型舰本式タービン(★0)" improve="0" amountlist1="11" amountlist2="0" fire="0" torpedo="0" />
   <smallgun id="20300" name="舰本 増设バルジ中型舰(★0)" improve="0" amountlist1="1" amountlist2="0" fire="0" torpedo="0" />
   <smallgun id="22600" name="九五式爆雷(★0)" improve="0" amountlist1="11" amountlist2="0" fire="0" torpedo="0" />
-  <smallgun id="22700" name="二式爆雷(★0)" improve="0" amountlist1="7" amountlist2="0" fire="0" torpedo="0" />
+  <smallgun id="22700" name="二式爆雷(★0)" improve="0" amountlist1="8" amountlist2="0" fire="0" torpedo="0" />
   <smallgun id="23000" name="特大发动艇+战车(★0)" improve="0" amountlist1="1" amountlist2="0" fire="0" torpedo="0" />
-  <smallgun id="22900" name="12.7cm单装高角炮后期型(★0)" improve="0" amountlist1="6" amountlist2="0" fire="1" torpedo="0" />
+  <smallgun id="22900" name="12.7cm单装高角炮后期型(★0)" improve="0" amountlist1="8" amountlist2="0" fire="1" torpedo="0" />
   <smallgun id="26000" name="Type124 ASDIC(★0)" improve="0" amountlist1="2" amountlist2="0" fire="0" torpedo="0" />
-  <smallgun id="26600" name="12.7cm连装炮C型改二(★0)" improve="0" amountlist1="8" amountlist2="0" fire="3" torpedo="0" />
   <smallgun id="27200" name="游击部队 舰队司令部(★0)" improve="0" amountlist1="1" amountlist2="0" fire="0" torpedo="0" />
   <smallgun id="26603" name="12.7cm连装炮C型改二(★3)" improve="3" amountlist1="3" amountlist2="0" fire="4.73205080756888" torpedo="0" />
   <smallgun id="26800" name="北方迷彩+北方装备(★0)" improve="0" amountlist1="1" amountlist2="0" fire="0" torpedo="0" />
-  <smallgun id="26700" name="12.7cm连装炮D型改二(★0)" improve="0" amountlist1="2" amountlist2="0" fire="3" torpedo="0" />
   <smallgun id="17403" name="53cm连装鱼雷(★3)" improve="3" amountlist1="1" amountlist2="0" fire="0" torpedo="4.73205080756888" />
   <smallgun id="28000" name="QF 4.7inch炮 Mk.XII改(★0)" improve="0" amountlist1="2" amountlist2="0" fire="3" torpedo="0" />
   <smallgun id="28200" name="130mm B-13连装炮(★0)" improve="0" amountlist1="4" amountlist2="0" fire="4" torpedo="0" />
   <smallgun id="28300" name="533mm 三连鱼雷(★0)" improve="0" amountlist1="2" amountlist2="0" fire="1" torpedo="5" />
   <smallgun id="22602" name="九五式爆雷(★2)" improve="2" amountlist1="1" amountlist2="0" fire="0" torpedo="0" />
-  <smallgun id="5105" name="12cm30连装喷进炮(★5)" improve="5" amountlist1="0" amountlist2="0" fire="0" torpedo="0" />
   <smallgun id="28400" name="5inch单装炮 Mk.30(★0)" improve="0" amountlist1="2" amountlist2="0" fire="2" torpedo="0" />
   <smallgun id="26605" name="12.7cm连装炮C型改二(★5)" improve="5" amountlist1="2" amountlist2="0" fire="5.23606797749979" torpedo="0" />
-  <smallgun id="28500" name="61cm三连酸素鱼雷后期型(★0)" improve="0" amountlist1="1" amountlist2="0" fire="0" torpedo="9" />
   <smallgun id="28600" name="61cm四连酸素鱼雷后期型(★0)" improve="0" amountlist1="1" amountlist2="0" fire="0" torpedo="11" />
   <smallgun id="28800" name="试制15cm9连装対潜喷进炮(★0)" improve="0" amountlist1="1" amountlist2="0" fire="0" torpedo="0" />
   <smallgun id="28700" name="三式爆雷投射机 集中配备(★0)" improve="0" amountlist1="1" amountlist2="0" fire="0" torpedo="0" />
-  <smallgun id="29400" name="12.7cm连装炮A型改二(★0)" improve="0" amountlist1="0" amountlist2="10" fire="2" torpedo="0" />
-  <smallgun id="28505" name="61cm三连酸素鱼雷后期型(★5)" improve="5" amountlist1="0" amountlist2="3" fire="0" torpedo="11.2360679774998" />
-  <smallgun id="28510" name="61cm三连酸素鱼雷后期型(★10)" improve="10" amountlist1="0" amountlist2="3" fire="0" torpedo="12.1622776601684" />
-  <smallgun id="28610" name="61cm四连酸素鱼雷后期型(★10)" improve="10" amountlist1="0" amountlist2="3" fire="0" torpedo="14.1622776601684" />
-  <smallgun id="28605" name="61cm四连酸素鱼雷后期型(★5)" improve="5" amountlist1="0" amountlist2="3" fire="0" torpedo="13.2360679774998" />
-  <smallgun id="24000" name="22号水上电探改四后期型(★0)" improve="0" amountlist1="0" amountlist2="10" fire="1" torpedo="0" />
   <smallgun id="4505" name="三式爆雷投射机(★5)" improve="5" amountlist1="1" amountlist2="0" fire="0" torpedo="0" />
-  <smallgun id="5101" name="12cm30连装喷进炮(★1)" improve="1" amountlist1="1" amountlist2="0" fire="0" torpedo="0" />
-  <smallgun id="200" name="12.7cm连装炮(★0)" improve="0" amountlist1="1" amountlist2="0" fire="2" torpedo="0" />
+  <smallgun id="201" name="12.7cm连装炮(★1)" improve="1" amountlist1="1" amountlist2="0" fire="3" torpedo="0" />
   <smallgun id="8804" name="22号水上电探改四(★4)" improve="4" amountlist1="1" amountlist2="0" fire="0" torpedo="0" />
   <smallgun id="22604" name="九五式爆雷(★4)" improve="4" amountlist1="1" amountlist2="0" fire="0" torpedo="0" />
+  <smallgun id="10604" name="13号空电探改(★4)" improve="4" amountlist1="1" amountlist2="0" fire="0" torpedo="0" />
 </usersmallgunequipmentdata>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="gb2312"?>
 <userplaneequipmentdata>
-  <plane id="2200" name="烈风(★0)" improve="0" amountlist1="17" amountlist2="0" antiaircraft="10" />
-  <plane id="5200" name="流星改(★0)" improve="0" amountlist1="23" amountlist2="0" antiaircraft="0" />
+  <plane id="2200" name="烈风(★0)" improve="0" amountlist1="17" amountlist2="10" antiaircraft="10" />
+  <plane id="5200" name="流星改(★0)" improve="0" amountlist1="23" amountlist2="10" antiaircraft="0" />
   <plane id="27100" name="紫电改四(★0)" improve="0" amountlist1="2" amountlist2="0" antiaircraft="10" />
-  <plane id="5700" name="彗星一二甲(★0)" improve="0" amountlist1="22" amountlist2="0" antiaircraft="0" />
-  <plane id="21700" name="强风改(★0)" improve="0" amountlist1="2" amountlist2="0" antiaircraft="5" />
+  <plane id="5700" name="彗星一二甲(★0)" improve="0" amountlist1="22" amountlist2="10" antiaircraft="0" />
+  <plane id="21700" name="强风改(★0)" improve="0" amountlist1="2" amountlist2="2" antiaircraft="5" />
   <plane id="21600" name="二式水战改熟练(★0)" improve="0" amountlist1="2" amountlist2="0" antiaircraft="5" />
   <plane id="16400" name="Ro.44(★0)" improve="0" amountlist1="2" amountlist2="0" antiaircraft="2" />
   <plane id="5400" name="彩云(★0)" improve="0" amountlist1="6" amountlist2="0" antiaircraft="0" />
@@ -58,9 +58,9 @@
   <plane id="19500" name="SBD(★0)" improve="0" amountlist1="2" amountlist2="0" antiaircraft="2" />
   <plane id="19600" name="TBD(★0)" improve="0" amountlist1="2" amountlist2="0" antiaircraft="0" />
   <plane id="19400" name="Late 298B(★0)" improve="0" amountlist1="5" amountlist2="0" antiaircraft="1" />
-  <plane id="25400" name="F6F-3N(★0)" improve="0" amountlist1="1" amountlist2="0" antiaircraft="8" />
+  <plane id="25400" name="F6F-3N(★0)" improve="0" amountlist1="1" amountlist2="1" antiaircraft="8" />
   <plane id="20500" name="F6F-3(★4)" improve="4" amountlist1="0" amountlist2="0" antiaircraft="8.8" />
-  <plane id="25500" name="F6F-5N(★0)" improve="0" amountlist1="1" amountlist2="0" antiaircraft="10" />
+  <plane id="25500" name="F6F-5N(★0)" improve="0" amountlist1="1" amountlist2="1" antiaircraft="10" />
   <plane id="19900" name="喷气式景云改(★0)" improve="0" amountlist1="1" amountlist2="0" antiaircraft="6" />
   <plane id="20000" name="橘花改(★0)" improve="0" amountlist1="1" amountlist2="0" antiaircraft="12" />
   <plane id="20800" name="晴岚631空(★0)" improve="0" amountlist1="1" amountlist2="0" antiaircraft="0" />
@@ -81,10 +81,10 @@
   <plane id="25300" name="Spitfire Mk.IX熟练(★0)" improve="0" amountlist1="1" amountlist2="0" antiaircraft="10" />
   <plane id="25200" name="Seafire Mk.III 改(★0)" improve="0" amountlist1="1" amountlist2="0" antiaircraft="9" />
   <plane id="24900" name="Fulmar(★0)" improve="0" amountlist1="1" amountlist2="0" antiaircraft="3" />
-  <plane id="23300" name="F4U-1D(★0)" improve="0" amountlist1="2" amountlist2="0" antiaircraft="7" />
-  <plane id="25700" name="TBM-3D(★0)" improve="0" amountlist1="1" amountlist2="0" antiaircraft="1" />
+  <plane id="23300" name="F4U-1D(★0)" improve="0" amountlist1="2" amountlist2="2" antiaircraft="7" />
+  <plane id="25700" name="TBM-3D(★0)" improve="0" amountlist1="1" amountlist2="1" antiaircraft="1" />
   <plane id="25800" name="夜战要员(★0)" improve="0" amountlist1="2" amountlist2="0" antiaircraft="0" />
-  <plane id="25900" name="夜战要员+熟练甲板员(★0)" improve="0" amountlist1="1" amountlist2="0" antiaircraft="0" />
+  <plane id="25900" name="夜战要员+熟练甲板员(★0)" improve="0" amountlist1="1" amountlist2="1" antiaircraft="0" />
   <plane id="27200" name="游击部队司令部(★0)" improve="0" amountlist1="1" amountlist2="0" antiaircraft="0" />
   <plane id="21800" name="四式战疾风(★0)" improve="0" amountlist1="2" amountlist2="0" antiaircraft="10" />
   <plane id="20200" name="紫电二一型紫电改(★0)" improve="0" amountlist1="1" amountlist2="0" antiaircraft="9" />

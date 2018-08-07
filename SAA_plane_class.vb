@@ -265,6 +265,69 @@ Public Class plane_class
 
     End Function
 
+    Public Function getlbplane(ByVal classification As Integer, ByVal airrange As Integer, Optional ByVal mode As Integer = 0) As Double
+        getlbplane = 0
+
+        Dim fattribute As Double = 0
+        Dim sattribute As Double = 0
+
+        Dim unuselist As New Collection
+        Dim fattributegroup As New Collection
+        Dim sattributegroup As New Collection
+
+        If planeunit.Length > 0 Then
+            For a = 0 To planeunit.Length - 1
+                If used(planeunit(a).uniquecode) = False Then
+                    If planeunit(a).classification = classification And planeunit(a).airrange >= airrange Then
+                        If classification = 31 Then   '取得陆攻
+                            If mode = 0 Then   '雷装优先，对空次要
+                                fattributegroup.Add(planeunit(a).torpedo)
+                                sattributegroup.Add(planeunit(a).antiaircraft)
+                            ElseIf mode = 1 Then   '对空优先，雷装次要
+                                fattributegroup.Add(planeunit(a).antiaircraft)
+                                sattributegroup.Add(planeunit(a).torpedo)
+                            End If
+                        ElseIf classification = 32 Or classification = 1 Then   '取得陆战局战舰战
+                            If mode = 0 Then     '优先出击制空
+                                fattributegroup.Add(planeunit(a).intercept * 1.5 + planeunit(a).antiaircraft)
+                                sattributegroup.Add(50 - planeunit(a).airrange)
+                            ElseIf mode = 1 Then     '优先防空制空
+                                fattributegroup.Add(planeunit(a).intercept + planeunit(a).antiaircraft + planeunit(a).antibombing * 2)
+                                sattributegroup.Add(50 - planeunit(a).airrange)
+                            End If
+                        ElseIf classification = 13 Then   '取得大艇
+                            If mode = 0 Then   '优先航程
+                                fattributegroup.Add(planeunit(a).airrange)
+                                sattributegroup.Add(planeunit(a).spotting)
+                            End If
+                        End If
+                    End If
+
+                End If
+            Next
+        End If
+
+        Dim planeid As Integer
+        If unuselist.Count <> 0 Then
+            If fattribute = 0 Then
+                For a = 1 To unuselist.Count
+                    If fattributegroup(a) > fattribute Then
+                        fattribute = fattributegroup(a)
+                    End If
+                Next
+            End If
+            For a = 1 To unuselist.Count
+                If fattributegroup(a) = fattribute Then
+                    If sattributegroup(a) >= sattribute Then
+                        planeid = unuselist(a)
+                        sattribute = sattributegroup(a)
+                    End If
+                End If
+            Next
+            getlbplane = planeid
+        End If
+    End Function
+
     Public Function getattribute(ByVal x As Integer, ByVal y As Integer)
         getattribute = 0
         If x <> 0 Then
@@ -307,6 +370,12 @@ Public Class plane_class
         End If
     End Function
 
+    ReadOnly Property unit(ByVal id As String) As planeunit_class
+        Get
+            unit = planeunit(planelist(id))
+        End Get
+    End Property
+
     Public Function getnfequipnum(ByVal x As Integer) As Integer
         getnfequipnum = 0
         If planeunit.Length > 0 Then
@@ -322,6 +391,19 @@ Public Class plane_class
                         getnfequipnum = getnfequipnum + 1
                     End If
                 Next
+            End If
+        End If
+    End Function
+
+    Public Function calculationminairrange(ByVal airrange As Integer, ByVal planeid As String) As Integer
+        calculationminairrange = airrange
+        Dim result As Double
+        If planeunit(planelist(planeid)).airrange >= airrange Then
+            result = (-(1 - airrange * 2) - Math.Sqrt((1 - airrange * 2) ^ 2 - 4 * (airrange ^ 2 - planeunit(planelist(planeid)).airrange))) / 2
+            If airrange - Math.Round(result) > 4 Then
+                calculationminairrange = airrange - 3
+            Else
+                calculationminairrange = result
             End If
         End If
     End Function
@@ -366,6 +448,7 @@ Public Class plane_class
             End If
         Next
     End Sub
+
     Public Sub movecollection()
         If temuselist.Count <> 0 Then
             For a = 1 To temuselist.Count
@@ -1498,6 +1581,72 @@ Public Class restrictcontrol_class
 
 End Class
 
+
+Public Class lbcarry_class
+    Dim planeidvalue As String = "0"
+    Dim skilledbuffvalue As Integer = 25
+
+    Public Property planeid As String
+        Get
+            planeid = planeidvalue
+        End Get
+        Set(value As String)
+            planeidvalue = value
+        End Set
+    End Property
+
+    Public Property skilledbuff As Integer
+        Get
+            skilledbuff = skilledbuffvalue
+        End Get
+        Set(value As Integer)
+            skilledbuffvalue = value
+        End Set
+    End Property
+
+    ReadOnly Property amount As Integer
+        Get
+            amount = 18
+            If planeidvalue <> "0" Then
+                If plane.unit(planeidvalue).classification = 13 Then
+                    amount = 4
+                End If
+            End If
+        End Get
+    End Property
+
+    ReadOnly Property damage As Double
+        Get
+            damage = 0
+            If planeidvalue <> "0" Then
+                If plane.unit(planeidvalue).classification = 31 Then
+                    damage = Int(0.8 * plane.unit(planeidvalue).torpedo * Math.Sqrt(1.8 * amount)) * 1.8
+                ElseIf plane.unit(planeidvalue).classification = 2 Or plane.unit(planeidvalue).classification = 3 Or plane.unit(planeidvalue).classification = 4 Or plane.unit(planeidvalue).classification = 12 Then
+                    damage = Int(1 * plane.unit(planeidvalue).torpedo * Math.Sqrt(1.8 * amount)) * 1
+                End If
+            End If
+        End Get
+    End Property
+
+    ReadOnly Property attackAAvalue As Integer
+        Get
+            attackAAvalue = 0
+            If planeidvalue <> "0" Then
+                attackAAvalue = Int((plane.unit(planeidvalue).antiaircraft + plane.unit(planeidvalue).intercept * 1.5) * Math.Sqrt(amount)) + skilledbuffvalue
+            End If
+        End Get
+    End Property
+
+    ReadOnly Property defenseAAvalue As Integer
+        Get
+            defenseAAvalue = 0
+            If planeidvalue <> "0" Then
+                defenseAAvalue = Int((plane.unit(planeidvalue).antiaircraft + plane.unit(planeidvalue).intercept + plane.unit(planeidvalue).antibombing * 2) * Math.Sqrt(amount)) + skilledbuffvalue
+            End If
+        End Get
+    End Property
+End Class
+
 Public Class plUIcontrol_class
     Dim stringcombo2 As New Collection
     Dim stringlist1 As New Collection
@@ -1512,6 +1661,7 @@ Public Class plUIcontrol_class
     Dim carryid As Integer
 
     Dim enhancedmode As Boolean = True
+    Dim landbasemode As Boolean = True
 
     Private Sub list1refresh()
         stringlist1.Clear()
@@ -2025,6 +2175,14 @@ Public Class plUIcontrol_class
             saa_plane.Label4.Text = "▼"
         End If
         enhancedmode = Not enhancedmode
+    End Sub
+
+    Public Sub changelandbasemode()
+        If landbasemode = False Then
+            saa_plane.Width = saa_plane.Width + 426
+        ElseIf landbasemode = True Then
+            saa_plane.Width = saa_plane.Width - 426
+        End If
     End Sub
 End Class
 
