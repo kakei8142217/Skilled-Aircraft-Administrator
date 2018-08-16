@@ -36,7 +36,7 @@
         ComboBox4.Items.Add("制空压制")
         ComboBox4.Items.Add("基地防守")
         ComboBox4.SelectedIndex = 0
-        For a = 1 To 15
+        For a = 0 To 15
             ComboBox5.Items.Add(a)
         Next
         ComboBox5.SelectedIndex = 0
@@ -56,7 +56,7 @@
         ComboBox8.Items.Add("制空压制")
         ComboBox8.Items.Add("基地防守")
         ComboBox8.SelectedIndex = 0
-        For a = 1 To 15
+        For a = 0 To 15
             ComboBox9.Items.Add(a)
         Next
         ComboBox9.SelectedIndex = 0
@@ -76,7 +76,7 @@
         ComboBox12.Items.Add("制空压制")
         ComboBox12.Items.Add("基地防守")
         ComboBox12.SelectedIndex = 0
-        For a = 1 To 15
+        For a = 0 To 15
             ComboBox13.Items.Add(a)
         Next
         ComboBox13.SelectedIndex = 0
@@ -91,6 +91,35 @@
         ComboBox15.Items.Add("制空权确保")
         ComboBox15.SelectedIndex = 1
 
+        ComboBox16.Items.Add("高")
+        ComboBox16.Items.Add("中")
+        ComboBox16.Items.Add("低")
+        ComboBox16.SelectedIndex = 0
+
+        ComboBox17.Items.Add("第一基地航空队")
+        ComboBox17.Items.Add("第二基地航空队")
+        ComboBox17.Items.Add("第三基地航空队")
+        ComboBox17.SelectedIndex = 0
+
+        ComboBox18.Items.Add("第一舰队")
+        ComboBox18.Items.Add("联合舰队")
+        ComboBox18.SelectedIndex = 0
+
+        ComboBox19.Items.Add("航空均势")
+        ComboBox19.Items.Add("航空优势")
+        ComboBox19.Items.Add("制空权确保")
+        ComboBox19.SelectedIndex = 1
+
+        ListBox3.Visible = False
+        ListBox3.Enabled = False
+
+        ComboBox17.Enabled = False
+        ComboBox18.Enabled = False
+        ComboBox19.Enabled = False
+
+        PictureBox1.Load(Application.StartupPath + "\data\image\theme\normal\LB_N_Link.png")
+        PictureBox2.Load(Application.StartupPath + "\data\image\theme\normal\LB_N_Link.png")
+        PictureBox3.Load(Application.StartupPath + "\data\image\theme\normal\LB_N_Link.png")
 
         Call list1refresh()
         Call list2refresh()
@@ -194,6 +223,15 @@
         Loop
     End Sub
 
+    Private Sub list3refresh()
+        ListBox3.Items.Clear()
+        Dim num As Integer = 1
+        Do While plUIcontrol.showstringlist3(num) <> ""
+            ListBox3.Items.Add(plUIcontrol.showstringlist3(num))
+            num = num + 1
+        Loop
+    End Sub
+
     Private Sub ListBox1_Click(sender As Object, e As EventArgs) Handles ListBox1.Click
         ComboBox2.Items.Clear()
         Dim num As Integer = 1
@@ -234,6 +272,14 @@
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
         Button6.Enabled = False
 
+        ordinaryfleetaavalue = Val(TextBox1.Text)
+        combinedfleetaavalue = Val(TextBox2.Text)
+        Call matchingplane()
+
+        Button6.Enabled = True
+    End Sub
+
+    Public Sub matchingplane()
         Dim ffexpectaavalue As Integer
         Dim cfexpectaavalue As Integer
 
@@ -243,9 +289,6 @@
 
 
 
-
-        ordinaryfleetaavalue = Val(TextBox1.Text)
-        combinedfleetaavalue = Val(TextBox2.Text)
         If combinedfleetaavalue < ordinaryfleetaavalue Then
             combinedfleetaavalue = ordinaryfleetaavalue
         End If
@@ -342,8 +385,6 @@
 
         Call list1refresh()
         Call list2refresh()
-
-        Button6.Enabled = True
     End Sub
 
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
@@ -2220,12 +2261,16 @@
     End Sub
 
     Private Sub CheckBox13_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox13.CheckedChanged
-        ComboBox8.Visible = Not CheckBox13.Checked
         ComboBox9.Visible = Not CheckBox13.Checked
         ComboBox10.Visible = Not CheckBox13.Checked
         Label10.Visible = Not CheckBox13.Checked
         TextBox4.Visible = Not CheckBox13.Checked
         Button13.Visible = Not CheckBox13.Checked
+        If CheckBox13.Checked Then
+            PictureBox2.Load(Application.StartupPath + "\data\image\theme\normal\LB_Link.png")
+        Else
+            PictureBox2.Load(Application.StartupPath + "\data\image\theme\normal\LB_N_Link.png")
+        End If
         If CheckBox13.Checked = True And CheckBox14.Checked = True Then
             CheckBox12.Checked = True
             CheckBox13.Enabled = False
@@ -2234,16 +2279,439 @@
     End Sub
 
     Private Sub CheckBox14_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox14.CheckedChanged
-        ComboBox12.Visible = Not CheckBox14.Checked
         ComboBox13.Visible = Not CheckBox14.Checked
         ComboBox14.Visible = Not CheckBox14.Checked
         Label13.Visible = Not CheckBox14.Checked
         TextBox5.Visible = Not CheckBox14.Checked
         Button14.Visible = Not CheckBox14.Checked
+        If CheckBox14.Checked Then
+            PictureBox3.Load(Application.StartupPath + "\data\image\theme\normal\LB_Link.png")
+        Else
+            PictureBox3.Load(Application.StartupPath + "\data\image\theme\normal\LB_N_Link.png")
+        End If
         If CheckBox13.Checked = True And CheckBox14.Checked = True Then
             CheckBox12.Checked = True
             CheckBox13.Enabled = False
             CheckBox14.Enabled = False
         End If
+    End Sub
+
+    Private Sub Button15_Click(sender As Object, e As EventArgs) Handles Button15.Click
+        plUIcontrol.changelandbaseshowmode()
+        If Button15.Text = "重新设置" Then
+            For a = 0 To 2
+                landbase.group(a).clear()
+            Next
+            plane.clearcollection(2)
+
+
+
+            landbase.group(0).aamode = ComboBox4.SelectedIndex
+            landbase.group(0).airrange = ComboBox5.SelectedIndex
+            If ComboBox6.SelectedIndex = 0 Then
+                landbase.group(0).targetaa = Val(TextBox3.Text)
+            ElseIf ComboBox6.SelectedIndex = 1 Then
+                landbase.group(0).targetaa = Val(TextBox3.Text) / 1.5
+            ElseIf ComboBox6.SelectedIndex = 2 Then
+                landbase.group(0).targetaa = Val(TextBox3.Text) / 3
+            End If
+            If ComboBox7.SelectedIndex = 0 Then
+                landbase.group(0).targetaastate = 0
+            ElseIf ComboBox7.SelectedIndex = 1 Then
+                landbase.group(0).targetaastate = 1 / 3
+            ElseIf ComboBox7.SelectedIndex = 2 Then
+                landbase.group(0).targetaastate = 2 / 3
+            ElseIf ComboBox7.SelectedIndex = 3 Then
+                landbase.group(0).targetaastate = 3 / 2
+            ElseIf ComboBox7.SelectedIndex = 4 Then
+                landbase.group(0).targetaastate = 3 / 1
+            End If
+
+            landbase.group(1).aamode = ComboBox8.SelectedIndex
+            If CheckBox13.Checked = False Then
+                landbase.group(1).airrange = ComboBox9.SelectedIndex
+                If ComboBox10.SelectedIndex = 0 Then
+                    landbase.group(1).targetaa = Val(TextBox4.Text)
+                ElseIf ComboBox10.SelectedIndex = 1 Then
+                    landbase.group(1).targetaa = Val(TextBox4.Text) / 1.5
+                ElseIf ComboBox10.SelectedIndex = 2 Then
+                    landbase.group(1).targetaa = Val(TextBox4.Text) / 3
+                End If
+            Else
+                landbase.group(1).airrange = landbase.group(0).airrange
+                'If ComboBox6.SelectedIndex = 0 Then
+                '    landbase.group(1).targetaa = Val(TextBox3.Text)
+                'ElseIf ComboBox6.SelectedIndex = 1 Then
+                '    landbase.group(1).targetaa = Val(TextBox3.Text) / 1.5
+                'ElseIf ComboBox6.SelectedIndex = 2 Then
+                '    landbase.group(1).targetaa = Val(TextBox3.Text) / 3
+                'End If
+            End If
+            If ComboBox11.SelectedIndex = 0 Then
+                landbase.group(1).targetaastate = 0
+            ElseIf ComboBox11.SelectedIndex = 1 Then
+                landbase.group(1).targetaastate = 1 / 3
+            ElseIf ComboBox11.SelectedIndex = 2 Then
+                landbase.group(1).targetaastate = 2 / 3
+            ElseIf ComboBox11.SelectedIndex = 3 Then
+                landbase.group(1).targetaastate = 3 / 2
+            ElseIf ComboBox11.SelectedIndex = 4 Then
+                landbase.group(1).targetaastate = 3 / 1
+            End If
+
+
+            landbase.group(2).aamode = ComboBox12.SelectedIndex
+            If CheckBox14.Checked = False Then
+                landbase.group(2).airrange = ComboBox13.SelectedIndex
+                If ComboBox14.SelectedIndex = 0 Then
+                    landbase.group(2).targetaa = Val(TextBox5.Text)
+                ElseIf ComboBox14.SelectedIndex = 1 Then
+                    landbase.group(2).targetaa = Val(TextBox5.Text) / 1.5
+                ElseIf ComboBox14.SelectedIndex = 2 Then
+                    landbase.group(2).targetaa = Val(TextBox5.Text) / 3
+                End If
+            Else
+                landbase.group(2).airrange = landbase.group(1).airrange
+                'If ComboBox6.SelectedIndex = 0 Then
+                '    landbase.group(2).targetaa = Val(TextBox3.Text)
+                'ElseIf ComboBox6.SelectedIndex = 1 Then
+                '    landbase.group(2).targetaa = Val(TextBox3.Text) / 1.5
+                'ElseIf ComboBox6.SelectedIndex = 2 Then
+                '    landbase.group(2).targetaa = Val(TextBox3.Text) / 3
+                'End If
+            End If
+            If ComboBox15.SelectedIndex = 0 Then
+                landbase.group(2).targetaastate = 0
+            ElseIf ComboBox15.SelectedIndex = 1 Then
+                landbase.group(2).targetaastate = 1 / 3
+            ElseIf ComboBox15.SelectedIndex = 2 Then
+                landbase.group(2).targetaastate = 2 / 3
+            ElseIf ComboBox15.SelectedIndex = 3 Then
+                landbase.group(2).targetaastate = 3 / 2
+            ElseIf ComboBox15.SelectedIndex = 4 Then
+                landbase.group(2).targetaastate = 3 / 1
+            End If
+
+            If CheckBox15.Checked Then
+                For a = 0 To 2
+                    For b = 0 To 3
+                        landbase.group(a).carry(b).attackskilledbuff = 0
+                    Next
+                Next
+            Else
+                For a = 0 To 2
+                    For b = 0 To 3
+                        landbase.group(a).carry(b).attackskilledbuff = 3
+                    Next
+                Next
+            End If
+
+            Dim airrangesort(2, 1) As Integer
+            For a = 0 To 2
+                airrangesort(a, 0) = a
+                airrangesort(a, 1) = landbase.group(a).airrange
+            Next
+            For a = 0 To 1
+                For b = a To 1
+                    If airrangesort(a, 1) < airrangesort(b + 1, 1) Then
+                        Dim cacheairrange(1) As Integer
+                        cacheairrange(0) = airrangesort(a, 0)
+                        cacheairrange(1) = airrangesort(a, 1)
+                        airrangesort(a, 0) = airrangesort(b + 1, 0)
+                        airrangesort(a, 1) = airrangesort(b + 1, 1)
+                        airrangesort(b + 1, 0) = cacheairrange(0)
+                        airrangesort(b + 1, 1) = cacheairrange(1)
+                    ElseIf airrangesort(a, 1) = airrangesort(b + 1, 1) Then
+                        If airrangesort(a, 0) > airrangesort(b + 1, 0) Then
+                            Dim cacheairrange(1) As Integer
+                            cacheairrange(0) = airrangesort(a, 0)
+                            cacheairrange(1) = airrangesort(a, 1)
+                            airrangesort(a, 0) = airrangesort(b + 1, 0)
+                            airrangesort(a, 1) = airrangesort(b + 1, 1)
+                            airrangesort(b + 1, 0) = cacheairrange(0)
+                            airrangesort(b + 1, 1) = cacheairrange(1)
+                        End If
+                    End If
+                Next
+            Next
+
+            Dim finishgroupcount As Integer = 0
+            For a = 0 To 2
+                For b = 0 To 2
+                    If b = airrangesort(finishgroupcount, 0) Then
+                        If b = 1 And CheckBox13.Checked Then
+                            If landbase.group(1).aamode = 0 Then
+                                landbase.group(1).aamode = landbase.group(0).aamode
+                            End If
+                            If landbase.group(0).aamode = 1 Or landbase.group(0).aamode = 2 Then
+                                landbase.group(1).targetaa = weakenaavalue(landbase.group(0).targetaa, landbase.group(0).attackAAvalue)(1)
+                            End If
+                        ElseIf b = 2 And CheckBox14.Checked Then
+                            If landbase.group(2).aamode = 0 Then
+                                landbase.group(2).aamode = landbase.group(1).aamode
+                            End If
+                            If landbase.group(1).aamode = 1 Or landbase.group(1).aamode = 2 Then
+                                landbase.group(2).targetaa = weakenaavalue(landbase.group(1).targetaa, landbase.group(1).attackAAvalue)(1)
+                            End If
+                        End If
+                        Call matchinglbplane(b, landbase.group(b).airrange)
+                        Exit For
+                    End If
+                Next
+                finishgroupcount = finishgroupcount + 1
+            Next
+            Call list3refresh()
+            If CheckBox16.Checked Then
+                Dim linklbindex As Integer
+                For a = ComboBox16.SelectedIndex To 2
+                    If landbase.group(a).aamode = 1 Or landbase.group(a).aamode = 2 Then
+                        linklbindex = a
+                    End If
+                Next
+                Dim sendaavalue As Double = weakenaavalue(landbase.group(linklbindex).targetaa, landbase.group(linklbindex).attackAAvalue)(1)
+                If ComboBox19.SelectedIndex = 0 Then
+                    sendaavalue = sendaavalue * 2 / 3
+                ElseIf ComboBox19.SelectedIndex = 1 Then
+                    sendaavalue = sendaavalue * 3 / 2
+                ElseIf ComboBox19.SelectedIndex = 2 Then
+                    sendaavalue = sendaavalue * 3 / 1
+                End If
+                If ComboBox18.SelectedIndex = 0 Then
+                    If sendaavalue < Val(TextBox1.Text) Then
+                        sendaavalue = Val(TextBox1.Text)
+                    End If
+                    ordinaryfleetaavalue = sendaavalue
+                    combinedfleetaavalue = Val(TextBox2.Text)
+                Else
+                    If sendaavalue < Val(TextBox2.Text) Then
+                        sendaavalue = Val(TextBox2.Text)
+                    End If
+                    ordinaryfleetaavalue = Val(TextBox1.Text)
+                    combinedfleetaavalue = sendaavalue
+                End If
+                Call matchingplane()
+            End If
+        End If
+    End Sub
+
+    Public Sub matchinglbplane(ByVal index As Integer, ByVal airrange As Integer)
+        Dim getlbplaneid As Double
+        Dim airrangechange As Boolean = False
+
+        If landbase.group(index).aamode = 1 Then
+            For a = 0 To 3
+                If landbase.group(index).carry(3 - a).planeid = "0" Then
+                    getlbplaneid = plane.getlbplane(31, airrange, 1)
+                    If getlbplaneid <> 0 Then
+                        landbase.group(index).carry(3 - a).planeid = getlbplaneid
+                        plane.addcollection(getlbplaneid)
+                    Else
+                        landbase.group(index).clear()
+                        plane.clearcollection()
+                        getlbplaneid = plane.getlbplane(13, airrange, 0)
+                        If getlbplaneid <> 0 Then
+                            landbase.group(index).carry(0).planeid = getlbplaneid
+                            plane.addcollection(getlbplaneid)
+                            airrange = plane.calculationminairrange(landbase.group(index).airrange, getlbplaneid)
+                        End If
+                        airrangechange = True
+                        Exit For
+                    End If
+                End If
+            Next
+            If airrangechange Then
+                For a = 0 To 3
+                    If landbase.group(index).carry(3 - a).planeid = "0" Then
+                        getlbplaneid = plane.getlbplane(31, airrange, 1)
+                        If getlbplaneid <> 0 Then
+                            landbase.group(index).carry(3 - a).planeid = getlbplaneid
+                            plane.addcollection(getlbplaneid)
+                        End If
+                    End If
+                Next
+            End If
+
+
+
+            Dim grid As Integer = 0
+
+            Do While landbase.group(index).groupaastate(1) = False And grid <= 3
+                If plane.getattribute(landbase.group(index).carry(grid).planeid, 3) <> 13 Then
+                    getlbplaneid = plane.getlbplane(32, airrange)
+                    If getlbplaneid <> 0 Then
+                        plane.removecollection(landbase.group(index).carry(grid).planeid)
+                        landbase.group(index).carry(grid).planeid = getlbplaneid
+                        plane.addcollection(getlbplaneid)
+                    Else
+                        getlbplaneid = plane.getlbplane(1, airrange)
+                        If getlbplaneid <> 0 Then
+                            plane.removecollection(landbase.group(index).carry(grid).planeid)
+                            landbase.group(index).carry(grid).planeid = getlbplaneid
+                            plane.addcollection(getlbplaneid)
+                        End If
+                    End If
+                End If
+                grid = grid + 1
+            Loop
+
+
+            'For a = 0 To 3
+            '    If landbase.group(index).carry(3 - a).planeid <> "0" Then
+            '        If plane.unit(landbase.group(index).carry(3 - a).planeid).classification = 31 Then
+
+            '        End If
+            '    End If
+            'Next
+
+        ElseIf landbase.group(index).aamode = 2 Then
+            For a = 0 To 3
+                If landbase.group(index).carry(a).planeid = "0" Then
+                    getlbplaneid = plane.getlbplane(32, airrange)
+                    If getlbplaneid <> 0 Then
+                        landbase.group(index).carry(a).planeid = getlbplaneid
+                        plane.addcollection(getlbplaneid)
+                    Else
+                        getlbplaneid = plane.getlbplane(1, airrange)
+                        If getlbplaneid <> 0 Then
+                            landbase.group(index).carry(a).planeid = getlbplaneid
+                            plane.addcollection(getlbplaneid)
+                        Else
+                            landbase.group(index).clear()
+                            plane.clearcollection()
+                            getlbplaneid = plane.getlbplane(13, airrange, 0)
+                            If getlbplaneid <> 0 Then
+                                landbase.group(index).carry(0).planeid = getlbplaneid
+                                plane.addcollection(getlbplaneid)
+                                airrange = plane.calculationminairrange(landbase.group(index).airrange, getlbplaneid)
+                            End If
+                            airrangechange = True
+                            Exit For
+                        End If
+                    End If
+                End If
+            Next
+            If airrangechange Then
+                For a = 0 To 3
+                    If landbase.group(index).carry(a).planeid = "0" Then
+                        getlbplaneid = plane.getlbplane(32, airrange)
+                        If getlbplaneid <> 0 Then
+                            landbase.group(index).carry(a).planeid = getlbplaneid
+                            plane.addcollection(getlbplaneid)
+                        Else
+                            getlbplaneid = plane.getlbplane(1, airrange)
+                            If getlbplaneid <> 0 Then
+                                landbase.group(index).carry(a).planeid = getlbplaneid
+                                plane.addcollection(getlbplaneid)
+                            End If
+                        End If
+                    End If
+                Next
+            End If
+
+        ElseIf landbase.group(index).aamode = 3 Then
+            For a = 0 To 3
+                If landbase.group(index).carry(a).planeid = "0" Then
+                    getlbplaneid = plane.getlbplane(32, 0, 1)
+                    If getlbplaneid <> 0 Then
+                        landbase.group(index).carry(a).planeid = getlbplaneid
+                        plane.addcollection(getlbplaneid)
+                    Else
+                        getlbplaneid = plane.getlbplane(1, 0, 1)
+                        If getlbplaneid <> 0 Then
+                            landbase.group(index).carry(a).planeid = getlbplaneid
+                            plane.addcollection(getlbplaneid)
+                        End If
+                    End If
+                End If
+            Next
+            Dim cachevalue(1) As String
+            cachevalue(0) = landbase.group(index).defenseAAvalue
+            cachevalue(1) = landbase.group(index).carry(3).planeid
+
+            getlbplaneid = plane.getplane(6)
+            If getlbplaneid <> 0 Then
+                landbase.group(index).carry(3).planeid = getlbplaneid
+                If landbase.group(index).defenseAAvalue > cachevalue(0) Then
+                    plane.addcollection(getlbplaneid)
+                Else
+                    landbase.group(index).carry(3).planeid = cachevalue(1)
+                End If
+            End If
+
+
+        End If
+        plane.movecollection(1)
+    End Sub
+
+    Public Function weakenaavalue(ByVal targetaavalue As Double, ByVal lastaavalue As Double) As Double()
+        Dim aastate As Integer
+        Dim baseweakenproportion() As Double = {0.95, 0.8, 0.7, 0.6, 0.5}
+        Dim weakenproportion As Double
+        Dim risklevel As Integer = ComboBox16.SelectedIndex
+        Dim risklist() As Double = {0.01, 0.1, 0.12}
+        Dim dvalue As Double
+        Dim resultvalue(1) As Double
+        For a = 0 To 1
+            dvalue = lastaavalue / targetaavalue
+            If dvalue < 1 / 3 Then
+                aastate = 0
+            ElseIf dvalue >= 1 / 3 And dvalue < 2 / 3 Then
+                aastate = 1
+            ElseIf dvalue >= 2 / 3 And dvalue < 3 / 2 Then
+                aastate = 2
+            ElseIf dvalue >= 3 / 2 And dvalue < 3 / 1 Then
+                aastate = 3
+            ElseIf dvalue >= 3 / 1 Then
+                aastate = 4
+            End If
+            weakenproportion = baseweakenproportion(aastate) + 1 / baseweakenproportion(aastate) * risklist(risklevel)
+            If weakenproportion > 1 Then
+                weakenproportion = 1
+            End If
+            targetaavalue = targetaavalue * Math.Sqrt(weakenproportion)
+            resultvalue(a) = targetaavalue
+        Next
+        weakenaavalue = resultvalue
+    End Function
+
+    Private Sub CheckBox16_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox16.CheckedChanged
+        ComboBox17.Enabled = Not ComboBox17.Enabled
+        ComboBox18.Enabled = Not ComboBox18.Enabled
+        ComboBox19.Enabled = Not ComboBox19.Enabled
+        Button6.Enabled = Not Button6.Enabled
+    End Sub
+
+    Private Sub Button12_Click(sender As Object, e As EventArgs) Handles Button12.Click
+        leading_intarget = 3
+
+        Dim saa_map As New SAA_map_form
+        saa_map.Show()
+        saa_map.Top = Me.Top
+        saa_map.Left = Me.Left
+        Me.Hide()
+    End Sub
+
+    Private Sub Button13_Click(sender As Object, e As EventArgs) Handles Button13.Click
+        leading_intarget = 4
+
+        Dim saa_map As New SAA_map_form
+        saa_map.Show()
+        saa_map.Top = Me.Top
+        saa_map.Left = Me.Left
+        Me.Hide()
+    End Sub
+
+    Private Sub Button14_Click(sender As Object, e As EventArgs) Handles Button14.Click
+        leading_intarget = 5
+
+        Dim saa_map As New SAA_map_form
+        saa_map.Show()
+        saa_map.Top = Me.Top
+        saa_map.Left = Me.Left
+        Me.Hide()
+    End Sub
+
+    Private Sub Label17_Click(sender As Object, e As EventArgs) Handles Label17.Click
+        plUIcontrol.changelandbasemode()
     End Sub
 End Class

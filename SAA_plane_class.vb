@@ -52,6 +52,8 @@ Public Class plane_class
     Dim uselist As New Collection
     Dim temuselist As New Collection
 
+    Dim lbuselist As New Collection
+
     Dim planeunit() As planeunit_class
     Dim planelist As New Collection
 
@@ -279,6 +281,7 @@ Public Class plane_class
             For a = 0 To planeunit.Length - 1
                 If used(planeunit(a).uniquecode) = False Then
                     If planeunit(a).classification = classification And planeunit(a).airrange >= airrange Then
+                        unuselist.Add(planeunit(a).uniquecode)
                         If classification = 31 Then   '取得陆攻
                             If mode = 0 Then   '雷装优先，对空次要
                                 fattributegroup.Add(planeunit(a).torpedo)
@@ -400,7 +403,7 @@ Public Class plane_class
         Dim result As Double
         If planeunit(planelist(planeid)).airrange >= airrange Then
             result = (-(1 - airrange * 2) - Math.Sqrt((1 - airrange * 2) ^ 2 - 4 * (airrange ^ 2 - planeunit(planelist(planeid)).airrange))) / 2
-            If airrange - Math.Round(result) > 4 Then
+            If airrange - Math.Round(result) >= 4 Then
                 calculationminairrange = airrange - 3
             Else
                 calculationminairrange = result
@@ -417,6 +420,13 @@ Public Class plane_class
                 End If
             Next
         End If
+        If lbuselist.Count <> 0 Then
+            For a = 1 To lbuselist.Count
+                If x = lbuselist(a) Then
+                    used = True
+                End If
+            Next
+        End If
         If temuselist.Count <> 0 Then
             For a = 1 To temuselist.Count
                 If x = temuselist(a) Then
@@ -429,8 +439,10 @@ Public Class plane_class
     Public Sub addcollection(ByVal x As Integer, Optional ByVal y As Integer = 0)
         If y = 0 Then
             temuselist.Add(x)
-        Else
+        ElseIf y = 1 Then
             uselist.Add(x)
+        ElseIf y = 2 Then
+            lbuselist.Add(x)
         End If
     End Sub
 
@@ -447,15 +459,27 @@ Public Class plane_class
                 Exit For
             End If
         Next
+        For a = 1 To lbuselist.Count
+            If lbuselist(a) = x Then
+                lbuselist.Remove(a)
+                Exit For
+            End If
+        Next
     End Sub
 
-    Public Sub movecollection()
+    Public Sub movecollection(Optional ByVal x As Integer = 0)
         If temuselist.Count <> 0 Then
-            For a = 1 To temuselist.Count
-                uselist.Add(temuselist.Item(a))
-            Next
+            If x = 0 Then
+                For a = 1 To temuselist.Count
+                    uselist.Add(temuselist.Item(a))
+                Next
+            ElseIf x = 1 Then
+                For a = 1 To temuselist.Count
+                    lbuselist.Add(temuselist.Item(a))
+                Next
+            End If
             temuselist.Clear()
-        End If
+            End If
     End Sub
 
     Public Sub clearcollection(Optional ByVal x As Integer = 0)
@@ -464,6 +488,9 @@ Public Class plane_class
         ElseIf x = 1 Then
             temuselist.Clear()
             uselist.Clear()
+        ElseIf x = 2 Then
+            temuselist.Clear()
+            lbuselist.Clear()
         End If
     End Sub
 End Class
@@ -1584,7 +1611,8 @@ End Class
 
 Public Class lbcarry_class
     Dim planeidvalue As String = "0"
-    Dim skilledbuffvalue As Integer = 25
+    Dim attackskilledbuffvalue As Integer
+    Dim aamodevalue As Integer
 
     Public Property planeid As String
         Get
@@ -1595,12 +1623,12 @@ Public Class lbcarry_class
         End Set
     End Property
 
-    Public Property skilledbuff As Integer
+    Public Property attackskilledbuff As Integer
         Get
-            skilledbuff = skilledbuffvalue
+            attackskilledbuff = attackskilledbuffvalue
         End Get
         Set(value As Integer)
-            skilledbuffvalue = value
+            attackskilledbuffvalue = value
         End Set
     End Property
 
@@ -1613,6 +1641,12 @@ Public Class lbcarry_class
                 End If
             End If
         End Get
+    End Property
+
+    WriteOnly Property aamode As Integer
+        Set(value As Integer)
+            aamodevalue = value
+        End Set
     End Property
 
     ReadOnly Property damage As Double
@@ -1632,7 +1666,11 @@ Public Class lbcarry_class
         Get
             attackAAvalue = 0
             If planeidvalue <> "0" Then
-                attackAAvalue = Int((plane.unit(planeidvalue).antiaircraft + plane.unit(planeidvalue).intercept * 1.5) * Math.Sqrt(amount)) + skilledbuffvalue
+                If plane.unit(planeidvalue).classification = 31 Then
+                    attackAAvalue = Int((plane.unit(planeidvalue).antiaircraft + plane.unit(planeidvalue).intercept * 1.5) * Math.Sqrt(amount)) + attackskilledbuffvalue
+                ElseIf plane.unit(planeidvalue).classification = 32 Or plane.unit(planeidvalue).classification = 1 Then
+                    attackAAvalue = Int((plane.unit(planeidvalue).antiaircraft + plane.unit(planeidvalue).intercept * 1.5) * Math.Sqrt(amount)) + 25
+                End If
             End If
         End Get
     End Property
@@ -1641,8 +1679,195 @@ Public Class lbcarry_class
         Get
             defenseAAvalue = 0
             If planeidvalue <> "0" Then
-                defenseAAvalue = Int((plane.unit(planeidvalue).antiaircraft + plane.unit(planeidvalue).intercept + plane.unit(planeidvalue).antibombing * 2) * Math.Sqrt(amount)) + skilledbuffvalue
+                If plane.unit(planeidvalue).classification = 1 Or plane.unit(planeidvalue).classification = 32 Then
+                    defenseAAvalue = Int((plane.unit(planeidvalue).antiaircraft + plane.unit(planeidvalue).intercept + plane.unit(planeidvalue).antibombing * 2) * Math.Sqrt(amount)) + 25
+                End If
             End If
+        End Get
+    End Property
+
+    ReadOnly Property showstring As String
+        Get
+            Dim value As String
+            value = "[" & Format(amount, "00") & "]"
+            If planeidvalue = "0" Then
+                value = value & "[无搭载]"
+            Else
+                value = value & "[" & plane.unit(planeidvalue).name & "][" & damage & "]["
+                If aamodevalue = 1 Or aamodevalue = 2 Then
+                    value = value & attackAAvalue & "]"
+                ElseIf aamodevalue = 3 Then
+                    value = value & defenseAAvalue & "]"
+                End If
+            End If
+            showstring = value
+        End Get
+    End Property
+End Class
+
+Public Class lbgroup_class
+    Dim lbcarry(3) As lbcarry_class
+    Dim aamodevalue As Integer
+    Dim idvalue As Integer
+    Dim airrangevalue As Integer
+    Dim targetaavalue As Double
+    Dim targetaastatevalue As Double
+
+    Sub New()
+        For a = 0 To 3
+            lbcarry(a) = New lbcarry_class
+        Next
+    End Sub
+
+    WriteOnly Property id As Integer
+        Set(value As Integer)
+            idvalue = value
+        End Set
+    End Property
+
+    Public Property targetaa As Double
+        Get
+            targetaa = targetaavalue
+        End Get
+        Set(value As Double)
+            targetaavalue = value
+        End Set
+    End Property
+
+    Public Property targetaastate As Double
+        Get
+            targetaastate = targetaastatevalue
+        End Get
+        Set(value As Double)
+            targetaastatevalue = value
+        End Set
+    End Property
+
+    Public Property airrange As Integer
+        Get
+            airrange = airrangevalue
+        End Get
+        Set(value As Integer)
+            airrangevalue = value
+        End Set
+    End Property
+
+    ReadOnly Property carry(ByVal index As Integer) As lbcarry_class
+        Get
+            carry = lbcarry(index)
+        End Get
+    End Property
+
+    ReadOnly Property damage As Double
+        Get
+            Dim value As Double
+            For a = 0 To 3
+                value = value + lbcarry(a).damage
+            Next
+            damage = value
+        End Get
+    End Property
+
+    ReadOnly Property attackAAvalue As Integer
+        Get
+            Dim value As Integer
+            For a = 0 To 3
+                value = value + lbcarry(a).attackAAvalue
+            Next
+            attackAAvalue = value
+        End Get
+    End Property
+
+    ReadOnly Property defenseAAvalue As Integer
+        Get
+            Dim value As Integer
+            Dim spotterexist As Boolean = False
+            For a = 0 To 3
+                value = value + lbcarry(a).defenseAAvalue
+                If lbcarry(a).planeid <> "0" Then
+                    If plane.unit(lbcarry(a).planeid).classification = 6 Then
+                        spotterexist = True
+                    End If
+                End If
+            Next
+            If spotterexist Then
+                value = value * 1.3
+            End If
+            defenseAAvalue = value
+        End Get
+    End Property
+
+    Public Property aamode As Integer
+        Get
+            aamode = aamodevalue
+        End Get
+        Set(value As Integer)
+            aamodevalue = value
+            For a = 0 To 3
+                lbcarry(a).aamode = value
+            Next
+        End Set
+    End Property
+
+    ReadOnly Property showstring As String
+        Get
+            Dim value As String = "第"
+            If idvalue = 0 Then
+                value = value & "一"
+            ElseIf idvalue = 1 Then
+                value = value & "二"
+            ElseIf idvalue = 2 Then
+                value = value & "三"
+            End If
+            value = value & "陆基航空队"
+            If aamodevalue = 0 Then
+                value = value & "[待机]"
+            Else
+                If aamodevalue = 1 Then
+                    value = value & "[伤害输出][" & Format(airrangevalue, "00") & "][" & damage & "][" & attackAAvalue & "]"
+                ElseIf aamodevalue = 2 Then
+                    value = value & "[制空压制][" & Format(airrangevalue, "00") & "][" & damage & "][" & attackAAvalue & "]"
+                ElseIf aamodevalue = 3 Then
+                    value = value & "[基地防守][" & Format(airrangevalue, "00") & "][" & damage & "][" & defenseAAvalue & "]"
+                End If
+            End If
+            showstring = value
+        End Get
+    End Property
+
+    Public Function groupaastate(ByVal mode As Integer) As Boolean
+        groupaastate = False
+        If mode = 1 Then
+            If targetaavalue * targetaastatevalue <= attackAAvalue Then
+                groupaastate = True
+            End If
+        ElseIf mode = 2 Then
+            If targetaavalue * targetaastatevalue <= defenseAAvalue Then
+                groupaastate = True
+            End If
+        End If
+    End Function
+
+    Public Sub clear()
+        For a = 0 To 3
+            lbcarry(a).planeid = "0"
+        Next
+    End Sub
+End Class
+
+Public Class landbase_class
+    Dim lbgroup(2) As lbgroup_class
+
+    Sub New()
+        For a = 0 To 2
+            lbgroup(a) = New lbgroup_class
+            lbgroup(a).id = a
+        Next
+    End Sub
+
+    ReadOnly Property group(ByVal index As Integer) As lbgroup_class
+        Get
+            group = lbgroup(index)
         End Get
     End Property
 End Class
@@ -1651,6 +1876,8 @@ Public Class plUIcontrol_class
     Dim stringcombo2 As New Collection
     Dim stringlist1 As New Collection
     Dim stringlist2 As New Collection
+
+    Dim stringlist3 As New Collection
 
     Dim firstfleet As New Collection
     Dim secondfleet As New Collection
@@ -2180,9 +2407,104 @@ Public Class plUIcontrol_class
     Public Sub changelandbasemode()
         If landbasemode = False Then
             saa_plane.Width = saa_plane.Width + 426
+            saa_plane.Label17.Left = saa_plane.Label17.Left + 40
+            saa_plane.Label17.Text = "◀"
         ElseIf landbasemode = True Then
             saa_plane.Width = saa_plane.Width - 426
+            saa_plane.Label17.Left = saa_plane.Label17.Left - 40
+            saa_plane.Label17.Text = "▶"
+        End If
+        landbasemode = Not landbasemode
+    End Sub
+
+    Public Sub changelandbaseshowmode()
+        If saa_plane.Button15.Text = "装配陆航" Then
+            saa_plane.Button15.Text = "重新设置"
+        ElseIf saa_plane.Button15.Text = "重新设置" Then
+            saa_plane.Button15.Text = "装配陆航"
+        End If
+        saa_plane.ListBox3.Visible = Not saa_plane.ListBox3.Visible
+        saa_plane.ListBox3.Enabled = Not saa_plane.ListBox3.Enabled
+    End Sub
+
+    Private Sub list3refresh()
+        stringlist3.Clear()
+        Dim str As String
+        Dim aavalue As Double = -1
+        Dim stageaavalue(1) As Double
+        For a = 0 To 2
+            stringlist3.Add(landbase.group(a).showstring)
+            For b = 0 To 3
+                stringlist3.Add(landbase.group(a).carry(b).showstring)
+            Next
+            If landbase.group(a).aamode = 1 Or landbase.group(a).aamode = 2 Then
+                stageaavalue = saa_plane.weakenaavalue(landbase.group(a).targetaa, landbase.group(a).attackAAvalue)
+                str = "<第一波>"
+                If landbase.group(a).attackAAvalue / landbase.group(a).targetaa < 1 / 3 Then
+                    str = str & "[制空权丧失]"
+                ElseIf landbase.group(a).attackAAvalue / landbase.group(a).targetaa >= 1 / 3 And landbase.group(a).attackAAvalue / landbase.group(a).targetaa < 2 / 3 Then
+                    str = str & "[航空劣势]"
+                ElseIf landbase.group(a).attackAAvalue / landbase.group(a).targetaa >= 2 / 3 And landbase.group(a).attackAAvalue / landbase.group(a).targetaa < 3 / 2 Then
+                    str = str & "[航空均势]"
+                ElseIf landbase.group(a).attackAAvalue / landbase.group(a).targetaa >= 3 / 2 And landbase.group(a).attackAAvalue / landbase.group(a).targetaa < 3 / 1 Then
+                    str = str & "[航空优势]"
+                ElseIf landbase.group(a).attackAAvalue / landbase.group(a).targetaa >= 3 / 1 Then
+                    str = str & "[制空权确保]"
+                End If
+                str = str & "[" & Math.Round（landbase.group(a).targetaa） & "→" & Math.Round(stageaavalue(0)) & "]"
+                stringlist3.Add(str)
+                str = "<第二波>"
+                If landbase.group(a).attackAAvalue / stageaavalue(0) < 1 / 3 Then
+                    str = str & "[制空权丧失]"
+                ElseIf landbase.group(a).attackAAvalue / stageaavalue(0) >= 1 / 3 And landbase.group(a).attackAAvalue / stageaavalue(0) < 2 / 3 Then
+                    str = str & "[航空劣势]"
+                ElseIf landbase.group(a).attackAAvalue / stageaavalue(0) >= 2 / 3 And landbase.group(a).attackAAvalue / stageaavalue(0) < 3 / 2 Then
+                    str = str & "[航空均势]"
+                ElseIf landbase.group(a).attackAAvalue / stageaavalue(0) >= 3 / 2 And landbase.group(a).attackAAvalue / stageaavalue(0) < 3 / 1 Then
+                    str = str & "[航空优势]"
+                ElseIf landbase.group(a).attackAAvalue / stageaavalue(0) >= 3 / 1 Then
+                    str = str & "[制空权确保]"
+                End If
+                str = str & "[" & Math.Round(stageaavalue(0)) & "→" & Math.Round(stageaavalue(1)) & "]"
+                stringlist3.Add(str)
+            End If
+        Next
+        For a = 0 To 2
+            If landbase.group(a).aamode = 3 Then
+                aavalue = landbase.group(a).targetaa
+                Exit For
+            End If
+        Next
+        If aavalue <> -1 Then
+            Dim alldefenseAAvalue As Double
+            For a = 0 To 2
+                If landbase.group(a).aamode = 3 Then
+                    alldefenseAAvalue = alldefenseAAvalue + landbase.group(a).defenseAAvalue
+                End If
+            Next
+            str = "<基地防守>[" & alldefenseAAvalue
+            If alldefenseAAvalue / aavalue < 1 / 3 Then
+                str = str & "-制空权丧失]"
+            ElseIf alldefenseAAvalue / aavalue >= 1 / 3 And alldefenseAAvalue / aavalue < 2 / 3 Then
+                str = str & "-航空劣势]"
+            ElseIf alldefenseAAvalue / aavalue >= 2 / 3 And alldefenseAAvalue / aavalue < 3 / 2 Then
+                str = str & "-航空均势]"
+            ElseIf alldefenseAAvalue / aavalue >= 3 / 2 And alldefenseAAvalue / aavalue < 3 / 1 Then
+                str = str & "-航空优势]"
+            ElseIf alldefenseAAvalue / aavalue >= 3 / 1 Then
+                str = str & "-制空权确保]"
+            End If
+            stringlist3.Add(str)
         End If
     End Sub
+
+    Public Function showstringlist3(ByVal x As Integer) As String
+        If x = 1 Then Call list3refresh()
+        Try
+            showstringlist3 = stringlist3(x)
+        Catch
+            showstringlist3 = ""
+        End Try
+    End Function
 End Class
 

@@ -70,6 +70,8 @@
 
     Public plUIcontrol As New plUIcontrol_class
 
+    Public landbase As New landbase_class
+
 
     '==============DD火雷排行
 
@@ -179,6 +181,13 @@ Public Class filecontrol_class
     End Sub
 
     Private Sub checkoldversionfile()
+        '0.2.7  map文件地址变更
+        If IO.Directory.Exists(Application.StartupPath + "\data\map") Then
+            IO.Directory.Delete(Application.StartupPath + "\data\map", True)
+        End If
+
+
+        '0.2.4  数据文件格式变更
         Dim result As DialogResult
         For Each file As String In IO.Directory.GetFiles(Application.StartupPath + "\data")
             If Mid(IO.Path.GetFileName(file), 1, 3) = "SAA" And IO.Path.GetExtension(file) = ".xml" Then
@@ -220,7 +229,6 @@ Public Class filecontrol_class
                     IO.File.Delete(file)
                 End If
             Next
-
         End If
     End Sub
 End Class

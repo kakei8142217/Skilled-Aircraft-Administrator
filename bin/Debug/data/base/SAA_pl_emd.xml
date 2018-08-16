@@ -95,7 +95,7 @@
   <plane id="138" name="二式大艇" classification="13" antibombing="0" intercept="0" nightfighting="0" />
   <plane id="107" name="舰队司令部设施" classification="21" antibombing="0" intercept="0" nightfighting="0" />
   <plane id="272" name="游击部队司令部" classification="21" antibombing="0" intercept="0" nightfighting="0" />
-  <plane id="224" name="爆装一式战隼III改" classification="31" antibombing="0" intercept="0" nightfighting="0" />
+  <plane id="224" name="爆装一式战隼III改" classification="33" antibombing="0" intercept="0" nightfighting="0" />
   <plane id="168" name="九六式陆攻" classification="31" antibombing="0" intercept="0" nightfighting="0" />
   <plane id="169" name="一式陆攻" classification="31" antibombing="0" intercept="0" nightfighting="0" />
   <plane id="180" name="一式陆攻二二型甲" classification="31" antibombing="0" intercept="0" nightfighting="0" />
@@ -105,7 +105,8 @@
   <plane id="175" name="雷电" classification="32" antibombing="5" intercept="2" nightfighting="0" />
   <plane id="201" name="紫电一一型" classification="32" antibombing="1" intercept="1" nightfighting="0" />
   <plane id="202" name="紫电二一型紫电改" classification="32" antibombing="1" intercept="3" nightfighting="0" />
-  <plane id="221" name="一式战隼II型" classification="32" antibombing="0" intercept="5" nightfighting="0" />
+  <plane id="263" name="紫电改343空战301" classification="32" antibombing="2" intercept="4" nightfighting="0" />
+  <plane id="221" name="一式战隼II型" classification="32" antibombing="0" intercept="2" nightfighting="0" />
   <plane id="222" name="一式战隼III型甲" classification="32" antibombing="1" intercept="3" nightfighting="0" />
   <plane id="250" name="Spitfire Mk.I" classification="32" antibombing="2" intercept="1" nightfighting="0" />
   <plane id="223" name="一式战隼III型甲54队" classification="32" antibombing="1" intercept="3" nightfighting="0" />

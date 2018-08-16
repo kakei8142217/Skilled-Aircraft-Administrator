@@ -87,12 +87,30 @@ Partial Class SAA_plane_form
         Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.Button14 = New System.Windows.Forms.Button()
         Me.CheckBox14 = New System.Windows.Forms.CheckBox()
+        Me.Button15 = New System.Windows.Forms.Button()
+        Me.ListBox3 = New System.Windows.Forms.ListBox()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.ComboBox16 = New System.Windows.Forms.ComboBox()
+        Me.CheckBox15 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox16 = New System.Windows.Forms.CheckBox()
+        Me.ComboBox17 = New System.Windows.Forms.ComboBox()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.ComboBox18 = New System.Windows.Forms.ComboBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.ComboBox19 = New System.Windows.Forms.ComboBox()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("宋体", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Button1.Location = New System.Drawing.Point(740, 506)
+        Me.Button1.Location = New System.Drawing.Point(393, 506)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(86, 27)
         Me.Button1.TabIndex = 0
@@ -276,7 +294,7 @@ Partial Class SAA_plane_form
         'Button8
         '
         Me.Button8.Font = New System.Drawing.Font("宋体", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Button8.Location = New System.Drawing.Point(393, 506)
+        Me.Button8.Location = New System.Drawing.Point(51, 506)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(117, 27)
         Me.Button8.TabIndex = 18
@@ -498,7 +516,7 @@ Partial Class SAA_plane_form
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("宋体", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label8.Location = New System.Drawing.Point(1108, 16)
+        Me.Label8.Location = New System.Drawing.Point(1108, 15)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(40, 16)
         Me.Label8.TabIndex = 40
@@ -509,7 +527,7 @@ Partial Class SAA_plane_form
         Me.ComboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox6.Font = New System.Drawing.Font("宋体", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.ComboBox6.FormattingEnabled = True
-        Me.ComboBox6.Location = New System.Drawing.Point(853, 53)
+        Me.ComboBox6.Location = New System.Drawing.Point(850, 53)
         Me.ComboBox6.Name = "ComboBox6"
         Me.ComboBox6.Size = New System.Drawing.Size(125, 24)
         Me.ComboBox6.TabIndex = 41
@@ -539,7 +557,7 @@ Partial Class SAA_plane_form
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("宋体", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label9.Location = New System.Drawing.Point(850, 144)
+        Me.Label9.Location = New System.Drawing.Point(850, 142)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(120, 16)
         Me.Label9.TabIndex = 45
@@ -549,7 +567,7 @@ Partial Class SAA_plane_form
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("宋体", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label10.Location = New System.Drawing.Point(1108, 147)
+        Me.Label10.Location = New System.Drawing.Point(1108, 142)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(40, 16)
         Me.Label10.TabIndex = 46
@@ -559,7 +577,7 @@ Partial Class SAA_plane_form
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("宋体", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label11.Location = New System.Drawing.Point(855, 232)
+        Me.Label11.Location = New System.Drawing.Point(850, 222)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(104, 16)
         Me.Label11.TabIndex = 47
@@ -570,7 +588,7 @@ Partial Class SAA_plane_form
         Me.ComboBox8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox8.Font = New System.Drawing.Font("宋体", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.ComboBox8.FormattingEnabled = True
-        Me.ComboBox8.Location = New System.Drawing.Point(995, 141)
+        Me.ComboBox8.Location = New System.Drawing.Point(995, 140)
         Me.ComboBox8.Name = "ComboBox8"
         Me.ComboBox8.Size = New System.Drawing.Size(93, 24)
         Me.ComboBox8.TabIndex = 48
@@ -580,7 +598,7 @@ Partial Class SAA_plane_form
         Me.ComboBox9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox9.Font = New System.Drawing.Font("宋体", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.ComboBox9.FormattingEnabled = True
-        Me.ComboBox9.Location = New System.Drawing.Point(1154, 144)
+        Me.ComboBox9.Location = New System.Drawing.Point(1154, 140)
         Me.ComboBox9.Name = "ComboBox9"
         Me.ComboBox9.Size = New System.Drawing.Size(54, 24)
         Me.ComboBox9.TabIndex = 49
@@ -590,7 +608,7 @@ Partial Class SAA_plane_form
         Me.ComboBox10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox10.Font = New System.Drawing.Font("宋体", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.ComboBox10.FormattingEnabled = True
-        Me.ComboBox10.Location = New System.Drawing.Point(853, 188)
+        Me.ComboBox10.Location = New System.Drawing.Point(850, 180)
         Me.ComboBox10.Name = "ComboBox10"
         Me.ComboBox10.Size = New System.Drawing.Size(125, 24)
         Me.ComboBox10.TabIndex = 50
@@ -600,7 +618,7 @@ Partial Class SAA_plane_form
         Me.ComboBox11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox11.Font = New System.Drawing.Font("宋体", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.ComboBox11.FormattingEnabled = True
-        Me.ComboBox11.Location = New System.Drawing.Point(965, 229)
+        Me.ComboBox11.Location = New System.Drawing.Point(965, 220)
         Me.ComboBox11.Name = "ComboBox11"
         Me.ComboBox11.Size = New System.Drawing.Size(123, 24)
         Me.ComboBox11.TabIndex = 51
@@ -608,7 +626,7 @@ Partial Class SAA_plane_form
         'TextBox4
         '
         Me.TextBox4.Font = New System.Drawing.Font("宋体", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.TextBox4.Location = New System.Drawing.Point(995, 188)
+        Me.TextBox4.Location = New System.Drawing.Point(995, 180)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(93, 26)
         Me.TextBox4.TabIndex = 52
@@ -616,7 +634,7 @@ Partial Class SAA_plane_form
         'Button13
         '
         Me.Button13.Font = New System.Drawing.Font("宋体", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Button13.Location = New System.Drawing.Point(1103, 188)
+        Me.Button13.Location = New System.Drawing.Point(1103, 180)
         Me.Button13.Name = "Button13"
         Me.Button13.Size = New System.Drawing.Size(147, 27)
         Me.Button13.TabIndex = 53
@@ -627,7 +645,7 @@ Partial Class SAA_plane_form
         '
         Me.CheckBox13.AutoSize = True
         Me.CheckBox13.Font = New System.Drawing.Font("宋体", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.CheckBox13.Location = New System.Drawing.Point(1111, 233)
+        Me.CheckBox13.Location = New System.Drawing.Point(1111, 222)
         Me.CheckBox13.Name = "CheckBox13"
         Me.CheckBox13.Size = New System.Drawing.Size(139, 20)
         Me.CheckBox13.TabIndex = 54
@@ -638,7 +656,7 @@ Partial Class SAA_plane_form
         '
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("宋体", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label12.Location = New System.Drawing.Point(855, 285)
+        Me.Label12.Location = New System.Drawing.Point(850, 269)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(120, 16)
         Me.Label12.TabIndex = 55
@@ -648,7 +666,7 @@ Partial Class SAA_plane_form
         '
         Me.Label13.AutoSize = True
         Me.Label13.Font = New System.Drawing.Font("宋体", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label13.Location = New System.Drawing.Point(1108, 285)
+        Me.Label13.Location = New System.Drawing.Point(1108, 269)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(40, 16)
         Me.Label13.TabIndex = 56
@@ -658,7 +676,7 @@ Partial Class SAA_plane_form
         '
         Me.Label14.AutoSize = True
         Me.Label14.Font = New System.Drawing.Font("宋体", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label14.Location = New System.Drawing.Point(855, 369)
+        Me.Label14.Location = New System.Drawing.Point(850, 349)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(104, 16)
         Me.Label14.TabIndex = 57
@@ -669,7 +687,7 @@ Partial Class SAA_plane_form
         Me.ComboBox12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox12.Font = New System.Drawing.Font("宋体", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.ComboBox12.FormattingEnabled = True
-        Me.ComboBox12.Location = New System.Drawing.Point(995, 282)
+        Me.ComboBox12.Location = New System.Drawing.Point(993, 267)
         Me.ComboBox12.Name = "ComboBox12"
         Me.ComboBox12.Size = New System.Drawing.Size(93, 24)
         Me.ComboBox12.TabIndex = 58
@@ -679,7 +697,7 @@ Partial Class SAA_plane_form
         Me.ComboBox13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox13.Font = New System.Drawing.Font("宋体", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.ComboBox13.FormattingEnabled = True
-        Me.ComboBox13.Location = New System.Drawing.Point(1154, 282)
+        Me.ComboBox13.Location = New System.Drawing.Point(1154, 267)
         Me.ComboBox13.Name = "ComboBox13"
         Me.ComboBox13.Size = New System.Drawing.Size(54, 24)
         Me.ComboBox13.TabIndex = 59
@@ -689,7 +707,7 @@ Partial Class SAA_plane_form
         Me.ComboBox14.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox14.Font = New System.Drawing.Font("宋体", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.ComboBox14.FormattingEnabled = True
-        Me.ComboBox14.Location = New System.Drawing.Point(858, 320)
+        Me.ComboBox14.Location = New System.Drawing.Point(850, 307)
         Me.ComboBox14.Name = "ComboBox14"
         Me.ComboBox14.Size = New System.Drawing.Size(120, 24)
         Me.ComboBox14.TabIndex = 60
@@ -699,7 +717,7 @@ Partial Class SAA_plane_form
         Me.ComboBox15.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox15.Font = New System.Drawing.Font("宋体", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.ComboBox15.FormattingEnabled = True
-        Me.ComboBox15.Location = New System.Drawing.Point(963, 364)
+        Me.ComboBox15.Location = New System.Drawing.Point(963, 347)
         Me.ComboBox15.Name = "ComboBox15"
         Me.ComboBox15.Size = New System.Drawing.Size(123, 24)
         Me.ComboBox15.TabIndex = 61
@@ -707,7 +725,7 @@ Partial Class SAA_plane_form
         'TextBox5
         '
         Me.TextBox5.Font = New System.Drawing.Font("宋体", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.TextBox5.Location = New System.Drawing.Point(995, 320)
+        Me.TextBox5.Location = New System.Drawing.Point(993, 307)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(93, 26)
         Me.TextBox5.TabIndex = 62
@@ -715,7 +733,7 @@ Partial Class SAA_plane_form
         'Button14
         '
         Me.Button14.Font = New System.Drawing.Font("宋体", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Button14.Location = New System.Drawing.Point(1103, 318)
+        Me.Button14.Location = New System.Drawing.Point(1103, 307)
         Me.Button14.Name = "Button14"
         Me.Button14.Size = New System.Drawing.Size(147, 27)
         Me.Button14.TabIndex = 63
@@ -726,18 +744,176 @@ Partial Class SAA_plane_form
         '
         Me.CheckBox14.AutoSize = True
         Me.CheckBox14.Font = New System.Drawing.Font("宋体", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.CheckBox14.Location = New System.Drawing.Point(1111, 366)
+        Me.CheckBox14.Location = New System.Drawing.Point(1111, 349)
         Me.CheckBox14.Name = "CheckBox14"
         Me.CheckBox14.Size = New System.Drawing.Size(139, 20)
         Me.CheckBox14.TabIndex = 64
         Me.CheckBox14.Text = "联动上一航空队"
         Me.CheckBox14.UseVisualStyleBackColor = True
         '
+        'Button15
+        '
+        Me.Button15.Font = New System.Drawing.Font("宋体", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Button15.Location = New System.Drawing.Point(1164, 506)
+        Me.Button15.Name = "Button15"
+        Me.Button15.Size = New System.Drawing.Size(86, 27)
+        Me.Button15.TabIndex = 65
+        Me.Button15.Text = "装配陆航"
+        Me.Button15.UseVisualStyleBackColor = True
+        '
+        'ListBox3
+        '
+        Me.ListBox3.Font = New System.Drawing.Font("宋体", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.ListBox3.FormattingEnabled = True
+        Me.ListBox3.ItemHeight = 16
+        Me.ListBox3.Location = New System.Drawing.Point(847, 12)
+        Me.ListBox3.Name = "ListBox3"
+        Me.ListBox3.Size = New System.Drawing.Size(405, 484)
+        Me.ListBox3.TabIndex = 66
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.Font = New System.Drawing.Font("宋体", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label15.Location = New System.Drawing.Point(850, 403)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(104, 16)
+        Me.Label15.TabIndex = 67
+        Me.Label15.Text = "制空削弱风险"
+        '
+        'ComboBox16
+        '
+        Me.ComboBox16.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox16.Font = New System.Drawing.Font("宋体", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.ComboBox16.FormattingEnabled = True
+        Me.ComboBox16.Location = New System.Drawing.Point(965, 400)
+        Me.ComboBox16.Name = "ComboBox16"
+        Me.ComboBox16.Size = New System.Drawing.Size(50, 24)
+        Me.ComboBox16.TabIndex = 68
+        '
+        'CheckBox15
+        '
+        Me.CheckBox15.AutoSize = True
+        Me.CheckBox15.Font = New System.Drawing.Font("宋体", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.CheckBox15.Location = New System.Drawing.Point(1071, 402)
+        Me.CheckBox15.Name = "CheckBox15"
+        Me.CheckBox15.Size = New System.Drawing.Size(179, 20)
+        Me.CheckBox15.TabIndex = 69
+        Me.CheckBox15.Text = "设置攻击机熟练度为0"
+        Me.CheckBox15.UseVisualStyleBackColor = True
+        '
+        'CheckBox16
+        '
+        Me.CheckBox16.AutoSize = True
+        Me.CheckBox16.Font = New System.Drawing.Font("宋体", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.CheckBox16.Location = New System.Drawing.Point(853, 438)
+        Me.CheckBox16.Name = "CheckBox16"
+        Me.CheckBox16.Size = New System.Drawing.Size(59, 20)
+        Me.CheckBox16.TabIndex = 70
+        Me.CheckBox16.Text = "联动"
+        Me.CheckBox16.UseVisualStyleBackColor = True
+        '
+        'ComboBox17
+        '
+        Me.ComboBox17.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox17.Font = New System.Drawing.Font("宋体", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.ComboBox17.FormattingEnabled = True
+        Me.ComboBox17.Location = New System.Drawing.Point(918, 436)
+        Me.ComboBox17.Name = "ComboBox17"
+        Me.ComboBox17.Size = New System.Drawing.Size(149, 24)
+        Me.ComboBox17.TabIndex = 71
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.Font = New System.Drawing.Font("宋体", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label16.Location = New System.Drawing.Point(1073, 439)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(24, 16)
+        Me.Label16.TabIndex = 72
+        Me.Label16.Text = "到"
+        '
+        'ComboBox18
+        '
+        Me.ComboBox18.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox18.Font = New System.Drawing.Font("宋体", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.ComboBox18.FormattingEnabled = True
+        Me.ComboBox18.Location = New System.Drawing.Point(1103, 436)
+        Me.ComboBox18.Name = "ComboBox18"
+        Me.ComboBox18.Size = New System.Drawing.Size(147, 24)
+        Me.ComboBox18.TabIndex = 73
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Location = New System.Drawing.Point(847, 10)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(405, 118)
+        Me.PictureBox1.TabIndex = 74
+        Me.PictureBox1.TabStop = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Location = New System.Drawing.Point(847, 137)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(405, 118)
+        Me.PictureBox2.TabIndex = 75
+        Me.PictureBox2.TabStop = False
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.Location = New System.Drawing.Point(847, 264)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(405, 118)
+        Me.PictureBox3.TabIndex = 76
+        Me.PictureBox3.TabStop = False
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.Font = New System.Drawing.Font("宋体", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label17.Location = New System.Drawing.Point(850, 511)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(19, 16)
+        Me.Label17.TabIndex = 77
+        Me.Label17.Text = "◀"
+        '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.Font = New System.Drawing.Font("宋体", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label18.Location = New System.Drawing.Point(850, 475)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(104, 16)
+        Me.Label18.TabIndex = 78
+        Me.Label18.Text = "目标制空状态"
+        '
+        'ComboBox19
+        '
+        Me.ComboBox19.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox19.Font = New System.Drawing.Font("宋体", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.ComboBox19.FormattingEnabled = True
+        Me.ComboBox19.Location = New System.Drawing.Point(963, 472)
+        Me.ComboBox19.Name = "ComboBox19"
+        Me.ComboBox19.Size = New System.Drawing.Size(125, 24)
+        Me.ComboBox19.TabIndex = 79
+        '
         'SAA_plane_form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1264, 583)
+        Me.Controls.Add(Me.ListBox3)
+        Me.Controls.Add(Me.ComboBox19)
+        Me.Controls.Add(Me.Label18)
+        Me.Controls.Add(Me.Label17)
+        Me.Controls.Add(Me.ComboBox18)
+        Me.Controls.Add(Me.Label16)
+        Me.Controls.Add(Me.ComboBox17)
+        Me.Controls.Add(Me.CheckBox16)
+        Me.Controls.Add(Me.CheckBox15)
+        Me.Controls.Add(Me.ComboBox16)
+        Me.Controls.Add(Me.Label15)
+        Me.Controls.Add(Me.Button15)
         Me.Controls.Add(Me.CheckBox14)
         Me.Controls.Add(Me.Button14)
         Me.Controls.Add(Me.TextBox5)
@@ -802,10 +978,16 @@ Partial Class SAA_plane_form
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.ListBox1)
         Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.PictureBox2)
+        Me.Controls.Add(Me.PictureBox3)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "SAA_plane_form"
         Me.Text = "熟练舰载机管理员"
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -875,4 +1057,19 @@ Partial Class SAA_plane_form
     Friend WithEvents TextBox5 As TextBox
     Friend WithEvents Button14 As Button
     Friend WithEvents CheckBox14 As CheckBox
+    Friend WithEvents Button15 As Button
+    Friend WithEvents ListBox3 As ListBox
+    Friend WithEvents Label15 As Label
+    Friend WithEvents ComboBox16 As ComboBox
+    Friend WithEvents CheckBox15 As CheckBox
+    Friend WithEvents CheckBox16 As CheckBox
+    Friend WithEvents ComboBox17 As ComboBox
+    Friend WithEvents Label16 As Label
+    Friend WithEvents ComboBox18 As ComboBox
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents Label17 As Label
+    Friend WithEvents Label18 As Label
+    Friend WithEvents ComboBox19 As ComboBox
 End Class
